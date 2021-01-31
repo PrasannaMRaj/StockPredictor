@@ -42,6 +42,7 @@ def get_final_df(model, data):
     test_df = data["test_df"]
     # add predicted future prices to the dataframe
 
+
     test_df[f"adjclose_{LOOKUP_STEP}"] = y_pred
     # add true future prices to the dataframe
     test_df[f"true_adjclose_{LOOKUP_STEP}"] = y_test
@@ -132,3 +133,12 @@ if not os.path.isdir(csv_results_folder):
     os.mkdir(csv_results_folder)
 csv_filename = os.path.join(csv_results_folder, model_name + ".csv")
 final_df.to_csv(csv_filename)
+
+
+file1 = open("testresult.txt","a")
+file1.write(f"\n{ticker}_EPOCH:{EPOCHS}_date_now:{date_now}_SPLIT_BY_DATE:{SPLIT_BY_DATE}_SHUFFLE:{SHUFFLE}_DROPOUT:{DROPOUT}_activation:elu_N_LAYERS:{N_LAYERS}_BATCH_SIZE:{BATCH_SIZE} ")
+file1.write(f"\nFuture price after {LOOKUP_STEP} days is {future_price:.2f}")
+file1.write(f"\n{LOSS} loss:" + str(loss))
+file1.write("\nMean Absolute Error:" + str(mean_absolute_error) )
+file1.write("\nAccuracy score:" + str(accuracy_score) +"\n")
+file1.close()

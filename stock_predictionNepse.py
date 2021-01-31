@@ -9,6 +9,34 @@ from collections import deque
 import numpy as np
 import pandas as pd
 import random
+from tensorflow.keras.layers import Layer
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Dense, Lambda, dot, Activation, concatenate
+
+class Attention(Layer):
+
+    def __init__(self, return_sequences=True):
+        self.return_sequences = return_sequences
+        super(Attention, self).__init__()
+
+    def build(self, input_shape):
+        self.W = self.add_weight(name="att_weight", shape=(input_shape[-1], 1),
+                                 initializer="normal")
+        self.b = self.add_weight(name="att_bias", shape=(input_shape[1], 1),
+                                 initializer="zeros")
+
+        super(Attention, self).build(input_shape)
+
+    def call(self, x):
+        e = K.tanh(K.dot(x, self.W) + self.b)
+        a = K.softmax(e, axis=1)
+        output = x * a
+
+        if self.return_sequences:
+            return output
+
+        return K.sum(output, axis=1)
+
 
 # set seed, so we can get the same results after rerunning several times
 np.random.seed(314)
@@ -152,6 +180,7 @@ def create_model(sequence_length, n_features, units=256, cell=LSTM, n_layers=2, 
                                         batch_input_shape=(None, sequence_length, n_features)))
             else:
                 model.add(cell(units, return_sequences=True, batch_input_shape=(None, sequence_length, n_features)))
+            #model.add(Attention(return_sequences=True))
         elif i == n_layers - 1:
             # last layer
             if bidirectional:
@@ -166,6 +195,11 @@ def create_model(sequence_length, n_features, units=256, cell=LSTM, n_layers=2, 
                 model.add(cell(units, return_sequences=True))
         # add dropout after each layer
         model.add(Dropout(dropout))
-    model.add(Dense(1, activation="linear"))
+        #if i==0:
+            #model.add(Attention(return_sequences=True))
+
+
+    model.add(Dense(1, activation="elu"))
+    #model.add(Dense(1))
     model.compile(loss=loss, metrics=["mean_absolute_error"], optimizer=optimizer)
     return model

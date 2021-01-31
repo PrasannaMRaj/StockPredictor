@@ -12,6 +12,7 @@ SCALE = True
 scale_str = f"sc-{int(SCALE)}"
 # whether to shuffle the dataset
 SHUFFLE = True
+#SHUFFLE = False
 shuffle_str = f"sh-{int(SHUFFLE)}"
 # whether to split the training/testing set by date
 #SPLIT_BY_DATE = False
@@ -20,23 +21,24 @@ split_by_date_str = f"sbd-{int(SPLIT_BY_DATE)}"
 # test ratio size, 0.2 is 20%
 TEST_SIZE = 0.2
 # features to use
-FEATURE_COLUMNS = ["adjclose", "volume", "open", "high", "RSI"]
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "stoch", "RSI","rsidata","macd"]
+FEATURE_COLUMNS = ["adjclose", "volume", "open", "high", "low"]
 # date now
-date_now = time.strftime("%Y-%m-%d")
-#date_now = '2020-12-24'
+#date_now = time.strftime("%Y-%m-%d")
+date_now = '2021-01-21'
 #print(date_now)
 
 ### model parameters
 
-N_LAYERS = 2
+N_LAYERS = 2#changd from original 2
 # LSTM cell
 CELL = LSTM
 # 256 LSTM neurons
 UNITS = 256
-# 40% dropout
-DROPOUT = 0.4
+# 20% dropout
+DROPOUT = 0.2
 # whether to use bidirectional RNNs
-BIDIRECTIONAL = False
+BIDIRECTIONAL = True
 
 ### training parameters
 
@@ -45,12 +47,15 @@ BIDIRECTIONAL = False
 # huber loss
 LOSS = "huber_loss"
 OPTIMIZER = "adam"
-BATCH_SIZE = 64
-EPOCHS = 5 #Changed from prev 500 to 10
+BATCH_SIZE = 32
+EPOCHS = 10 #Changed from prev 500 to 10
 
 # Amazon stock market
 #ticker = "AMZN"
-ticker = "NABIL"
+ticker = "MICROFINANCE"
+activationfunction=["linear","tanh","sigmoid","relu","elu","softmax","softplus","softsign","exponential",""]
+
+
 
 ticker_data_filename = os.path.join("data", f"{ticker}_{date_now}.csv")
 # model name to save, making it as unique as possible based on parameters

@@ -1,0 +1,197 @@
+
+ BANKING_EPOCH:10_date_now:2021-01-30_SPLIT_BY_DATE:True_SHUFFLE:True 
+ Future price after 5 days is 1770.09
+huber_loss loss:0.0013642238918691874
+Mean Absolute Error:294.63065816260877
+Accuracy score:0.6287128712871287
+
+BANKING_EPOCH:200_date_now:2021-01-30_SPLIT_BY_DATE:True_SHUFFLE:True 
+ Future price after 5 days is 1813.06
+huber_loss loss:0.0012194715673103929
+Mean Absolute Error:291.042240794003
+Accuracy score:0.6336633663366337
+
+MICROFINANCE_EPOCH:200_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True 
+ Future price after 5 days is 3448.79 
+ 
+huber_loss loss:0.0035922154784202576
+Mean Absolute Error:1418.9939667482674
+Accuracy score:0.359375
+
+MICROFINANCE_EPOCH:100_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:False 
+ Future price after 5 days is 3489.40 
+ 
+huber_loss loss:0.004017705097794533
+Mean Absolute Error:1440.0921235202252
+Accuracy score:0.3359375
+
+MICROFINANCE_EPOCH:100_date_now:2021-01-21_SPLIT_BY_DATE:False_SHUFFLE:False 
+ Future price after 5 days is 3489.40 
+ 
+huber_loss loss:0.004017705097794533
+Mean Absolute Error:1440.0921235202252
+Accuracy score:0.3359375
+
+MICROFINANCE_EPOCH:100_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:False 
+ Future price after 5 days is 3489.40 
+ 
+huber_loss loss:0.004017705097794533
+Mean Absolute Error:1440.0921235202252
+Accuracy score:0.3359375
+
+MICROFINANCE_EPOCH:100_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:False_Featureold
+ Future price after 5 days is 3689.92 
+ 
+huber_loss loss:0.0017720002215355635
+Mean Absolute Error:1368.8991920099406
+Accuracy score:0.4375
+
+MICROFINANCE_EPOCH:101_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True 
+ Future price after 5 days is 3388.16 
+ 
+huber_loss loss:0.001988436561077833
+Mean Absolute Error:1373.209544360563
+Accuracy score:0.40625
+
+NABIL_EPOCH:101_date_now:2021-01-30_SPLIT_BY_DATE:False_SHUFFLE:True
+ Future price after 5 days is 1101.27 
+ 
+huber_loss loss:0.0006605402450077236
+Mean Absolute Error:712.2885952703654
+Accuracy score:0.6106870229007634
+
+MICROFINANCE_EPOCH:15_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True 
+ Future price after 5 days is 3783.48 
+ 
+huber_loss loss:0.001648876117542386
+Mean Absolute Error:1363.2828470341117
+Accuracy score:0.5891472868217055
+
+MICROFINANCE_EPOCH:102_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_activation:tanh
+ Future price after 5 days is 3401.32 
+ 
+huber_loss loss:0.0031899206805974245
+Mean Absolute Error:1421.7018604823202
+Accuracy score:0.5038759689922481
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_activation:sigmoid
+ Future price after 5 days is 2960.38 
+ 
+huber_loss loss:0.009315981529653072
+Mean Absolute Error:1519.7770013584197
+Accuracy score:0.4263565891472868
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_activation:relu
+ Future price after 5 days is 1252.27 
+ 
+huber_loss loss:0.15995661914348602
+Mean Absolute Error:2827.727404040098
+Accuracy score:0.32558139534883723
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: softmax
+Future price after 5 days is 4156.41
+huber_loss loss:0.11746986955404282
+Mean Absolute Error:2580.9525094097853
+Accuracy score:0.6744186046511628
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: softplus
+Future price after 5 days is 1252.32
+huber_loss loss:0.15994270145893097
+Mean Absolute Error:2827.6505475366116
+Accuracy score:0.32558139534883723
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: softsign
+Future price after 5 days is 3014.91
+huber_loss loss:0.00954731646925211
+Mean Absolute Error:1527.8531441953778
+Accuracy score:0.3333333333333333
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: selu(good result)
+Future price after 5 days is 3673.60
+huber_loss loss:0.00275369081646204
+Mean Absolute Error:1400.1805573353172
+Accuracy score:0.3023255813953488
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: elu(good result)
+Future price after 5 days is 3740.68
+huber_loss loss:0.0020549094770103693
+Mean Absolute Error:1375.4693955494463
+Accuracy score:0.4496124031007752
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: exponential
+Future price after 5 days is 1252.30
+huber_loss loss:0.1599474996328354
+Mean Absolute Error:2827.6766856718064
+Accuracy score:0.32558139534883723
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: NONE(good result)
+Future price after 5 days is 3728.67
+huber_loss loss:0.002159689087420702
+Mean Absolute Error:1378.6832718456537
+Accuracy score:0.4108527131782946
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: NONE_attention
+Future price after 5 days is 2683.25
+huber_loss loss:0.022720210254192352
+Mean Absolute Error:1783.9044370412826
+Accuracy score:0.32558139534883723
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: LINEAR_attention
+Future price after 5 days is 2713.13
+huber_loss loss:0.021898308768868446
+Mean Absolute Error:1772.2351444786786
+Accuracy score:0.32558139534883723
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: LINEAR
+Future price after 5 days is 3728.67
+huber_loss loss:0.002159689087420702
+Mean Absolute Error:1378.6832718456537
+Accuracy score:0.4108527131782946
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.4_activation: elu_attention
+Future price after 5 days is 2712.97
+huber_loss loss:0.021907983347773552
+Mean Absolute Error:1772.3798995485902
+Accuracy score:0.32558139534883723
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation: elu(most accurate till now)
+Future price after 5 days is 3828.54
+huber_loss loss:0.0018960091983899474
+Mean Absolute Error:1381.0792279030384
+Accuracy score:0.49612403100775193
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation: elu_none bi
+Future price after 5 days is 3563.06
+huber_loss loss:0.003696001134812832
+Mean Absolute Error:1434.6344926397503
+Accuracy score:0.37209302325581395
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation: 
+Future price after 10 days is 3556.65
+huber_loss loss:0.0054353587329387665
+Mean Absolute Error:1486.431599946618
+Accuracy score:0.2578125
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation: 
+Future price after 3 days is 3689.46
+huber_loss loss:0.002317586215212941
+Mean Absolute Error:1392.4220534260571
+Accuracy score:0.3923076923076923
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:64 
+Future price after 4 days is 3731.24
+huber_loss loss:0.0022744042798876762
+Mean Absolute Error:1391.4834065934272
+Accuracy score:0.3
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:2_BATCH_SIZE:32 
+Future price after 5 days is 3877.32
+huber_loss loss:0.0011511138873174787
+Mean Absolute Error:1358.8131069093943
+Accuracy score:0.6201550387596899(most accurate till now)
+
+MICROFINANCE_EPOCH:10_date_now:2021-01-21_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:2_BATCH_SIZE:32_OLD features
+Future price after 5 days is 3944.87
+huber_loss loss:0.001433864003047347
+Mean Absolute Error:1376.2561144712568
+Accuracy score:0.5813953488372093

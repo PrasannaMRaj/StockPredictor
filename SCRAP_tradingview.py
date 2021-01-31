@@ -10,15 +10,18 @@ import json
 import os
 import time
 from ta import add_all_ta_features
+from ta.momentum import StochasticOscillator,StochRSIIndicator
+from ta.trend import MACD
 from ta.utils import dropna
+import numpy as np
 
 
-ticker='NABIL'
+ticker='MICROFINANCE'
 
 def start_requests(ticker):
 
         Todate_origin = datetime.datetime(int(time.strftime("%Y")), int(time.strftime("%m")), int(time.strftime("%d")), 23, 59).timestamp()
-        Fromdate_origin=datetime.datetime(1994, 1, 1, 0, 0).timestamp()
+        Fromdate_origin=datetime.datetime(2000, 1, 1, 0, 0).timestamp()
         #print("fromdate: ",Fromdate_origin)
         #print("TO date: ", Todate_origin)
 
@@ -35,18 +38,34 @@ def start_requests(ticker):
         page=requests.get(url,params=payload)
         #print(page.json())
         df = pd.DataFrame(page.json())
-        df.columns = df.columns.str.replace("[t]", "date")
-        df.columns = df.columns.str.replace("[o]", "open")
-        df.columns = df.columns.str.replace("[h]", "high")
-        df.columns = df.columns.str.replace("[l]", "low")
-        df.columns = df.columns.str.replace("[c]", "adjclose")
-        df.columns = df.columns.str.replace("[v]", "volume")
 
-        df['date'] = pd.to_datetime(df['date'].astype(int), unit='s')
-        #df['RSI'] = RSICalculation(df)
+        df.columns=['date','adjclose','open','high','low','volume','other']
+
+
+        #df['date'] = datetime.datetime.fromtimestamp(df['date']).strftime('%Y-%m-%d')
+        #df['date']= df['date'].date()
+        #df['date'] = pd.to_datetime(df['date'].astype(int), unit='s')
+        df['date'] = df['date'].map(lambda val: datetime.datetime.fromtimestamp(val).strftime('%Y-%m-%d'))
+        #df['date'] = pd.to_datetime(df['date'], unit='s').dt.strftime('%Y-%m-%d')
         timewindow=14
+        df = df.replace(0, np.nan)
         df['RSI'] = CalcRSI(df['adjclose'],timewindow)
         #mom_data = add_all_ta_features(df, open="open", high="high", low="low", close="adjclose", volume="volume")
+        StochOsc_data = StochasticOscillator(high=df['high'], low=df['low'], close=df['adjclose'])
+        df['stoch']=StochOsc_data.stoch()
+        df['stochsignal']=StochOsc_data.stoch_signal()
+        RSI_data = StochRSIIndicator(close=df['adjclose'])
+        df['rsidata']=RSI_data.stochrsi()
+        df['rsidata_k'] = RSI_data.stochrsi_k()
+        df['rsidata_d'] = RSI_data.stochrsi_d()
+
+        MACD_data = MACD(window_slow=17, window_fast=8,close=df['adjclose'])
+        df['macd']=MACD_data.macd()
+        df['macddiff'] = MACD_data.macd_diff()
+        df['macdsignal'] = MACD_data.macd_signal()
+
+
+
 
         df.to_csv(f'{ticker}.csv', index=False, encoding="utf-8")
 

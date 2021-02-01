@@ -16,7 +16,7 @@ from ta.utils import dropna
 import numpy as np
 
 
-ticker='NABIL'
+ticker='NLIC'
 
 def start_requests(ticker):
 
@@ -51,8 +51,10 @@ def start_requests(ticker):
         #df['date'] = pd.to_datetime(df['date'], unit='s').dt.strftime('%Y-%m-%d')
         timewindow=14
         df = df.replace(0, np.nan)
+
+        '''
         df['RSI'] = CalcRSI(df['adjclose'],timewindow)
-        #mom_data = add_all_ta_features(df, open="open", high="high", low="low", close="adjclose", volume="volume")
+
         StochOsc_data = StochasticOscillator(high=df['high'], low=df['low'], close=df['adjclose'])
         df['stoch']=StochOsc_data.stoch()
         df['stochsignal']=StochOsc_data.stoch_signal()
@@ -64,7 +66,9 @@ def start_requests(ticker):
         MACD_data = MACD(window_slow=17, window_fast=8,close=df['adjclose'])
         df['macd']=MACD_data.macd()
         df['macddiff'] = MACD_data.macd_diff()
-        df['macdsignal'] = MACD_data.macd_signal()
+        df['macdsignal'] = MACD_data.macd_signal()'''
+
+        mom_data = add_all_ta_features(df, open="open", high="high", low="low", close="adjclose", volume="volume")
 
 
 

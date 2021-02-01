@@ -1,11 +1,3 @@
-from tensorflow.keras.layers import Layer
-from tensorflow.keras import initializers, regularizers, constraints
-#from tensorflow.keras.engine.input_layer import Input
-from tensorflow.keras import Input
-from tensorflow.keras import backend as K
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import BatchNormalization
-
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout, Bidirectional
@@ -17,80 +9,6 @@ from collections import deque
 import numpy as np
 import pandas as pd
 import random
-
-#from tensorflow.keras.layers import Layer
-from tensorflow.keras import backend as K
-from tensorflow.keras.layers import Dense, Lambda, dot, Activation, concatenate
-
-
-class Attention(Layer):
-    def __init__(self, step_dim,
-                 W_regularizer=None, b_regularizer=None,
-                 W_constraint=None, b_constraint=None,
-                 bias=True, **kwargs):
-        self.supports_masking = True
-        self.init = initializers.get('glorot_uniform')
-
-        self.W_regularizer = regularizers.get(W_regularizer)
-        self.b_regularizer = regularizers.get(b_regularizer)
-
-        self.W_constraint = constraints.get(W_constraint)
-        self.b_constraint = constraints.get(b_constraint)
-
-        self.bias = bias
-        self.step_dim = step_dim
-        self.features_dim = 0
-        super(Attention, self).__init__(**kwargs)
-
-    def build(self, input_shape):
-        assert len(input_shape) == 3
-
-        self.W = self.add_weight(shape=(input_shape[-1],),
-                                 initializer=self.init,
-                                 name='{}_W'.format(self.name),
-                                 regularizer=self.W_regularizer,
-                                 constraint=self.W_constraint)
-        self.features_dim = input_shape[-1]
-
-        if self.bias:
-            self.b = self.add_weight(shape=(input_shape[1],),
-                                     initializer='zero',
-                                     name='{}_b'.format(self.name),
-                                     regularizer=self.b_regularizer,
-                                     constraint=self.b_constraint)
-        else:
-            self.b = None
-
-        self.built = True
-
-    def compute_mask(self, input, input_mask=None):
-        return None
-
-    def call(self, x, mask=None):
-        features_dim = self.features_dim
-        step_dim = self.step_dim
-
-        eij = K.reshape(K.dot(K.reshape(x, (-1, features_dim)),
-                              K.reshape(self.W, (features_dim, 1))), (-1, step_dim))
-
-        if self.bias:
-            eij += self.b
-
-        eij = K.tanh(eij)
-
-        a = K.exp(eij)
-
-        if mask is not None:
-            a *= K.cast(mask, K.floatx())
-
-        a /= K.cast(K.sum(a, axis=1, keepdims=True) + K.epsilon(), K.floatx())
-
-        a = K.expand_dims(a)
-        weighted_input = x * a
-        return K.sum(weighted_input, axis=1)
-
-    def compute_output_shape(self, input_shape):
-        return input_shape[0], self.features_dim
 
 # set seed, so we can get the same results after rerunning several times
 np.random.seed(314)
@@ -124,8 +42,7 @@ def load_data(ticker, n_steps=50, scale=True, shuffle=True, lookup_step=1, split
     # see if ticker is already a loaded stock from yahoo finance
     if isinstance(ticker, str):
         # load it from yahoo_fin library
-        #df = si.get_data(ticker)
-        df = pd.read_csv(f'{ticker}.csv', parse_dates=True, index_col=0)
+        df = si.get_data(ticker)
     elif isinstance(ticker, pd.DataFrame):
         # already loaded, use it directly
         df = ticker
@@ -225,24 +142,29 @@ def load_data(ticker, n_steps=50, scale=True, shuffle=True, lookup_step=1, split
 
 def create_model(sequence_length, n_features, units=256, cell=LSTM, n_layers=2, dropout=0.3,
                  loss="mean_absolute_error", optimizer="rmsprop", bidirectional=False):
-    inp = Input(shape=(sequence_length, n_features))
-    x = Bidirectional(cell(units, return_sequences=True))(inp)
-    x = Dropout(dropout)(x)
-    x = Attention(sequence_length)(x)
-    x = Dropout(dropout)(x)
-    x = Dense(32, activation="linear")(x)
-    x = Dropout(dropout)(x)
-    x = Dense(1, activation="elu")(x)
-    model_lstm_attention = Model(inputs=inp, outputs=x)
-    #model.add(Dense(1, activation="elu"))
-    # model.add(Dense(1))
-    model_lstm_attention.compile(loss=loss, metrics=["mean_absolute_error"], optimizer=optimizer)
-    model_lstm_attention.summary()
-
-
-
-    return model_lstm_attention
-
-
-
-
+    model = Sequential()
+    for i in range(n_layers):
+        if i == 0:
+            # first layer
+            if bidirectional:
+                model.add(Bidirectional(cell(units, return_sequences=True),
+                                        batch_input_shape=(None, sequence_length, n_features)))
+            else:
+                model.add(cell(units, return_sequences=True, batch_input_shape=(None, sequence_length, n_features)))
+        elif i == n_layers - 1:
+            # last layer
+            if bidirectional:
+                model.add(Bidirectional(cell(units, return_sequences=False)))
+            else:
+                model.add(cell(units, return_sequences=False))
+        else:
+            # hidden layers
+            if bidirectional:
+                model.add(Bidirectional(cell(units, return_sequences=True)))
+            else:
+                model.add(cell(units, return_sequences=True))
+        # add dropout after each layer
+        model.add(Dropout(dropout))
+    model.add(Dense(1, activation="linear"))
+    model.compile(loss=loss, metrics=["mean_absolute_error"], optimizer=optimizer)
+    return model

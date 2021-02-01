@@ -1,0 +1,65 @@
+BOKL
+
+Future price after 2 days is 322.29$
+huber_loss loss: 0.000554076861590147
+Mean Absolute Error: 9.628568104468286
+Accuracy score: 0.532967032967033
+Total buy profit: -158.3939666748047
+Total sell profit: 338.5120849609375
+Total profit: 180.1181182861328
+Profit per trade: 0.9896599905831474
+
+CBBL
+
+Future price after 2 days is 1388.96$
+huber_loss loss: 0.0002802268136292696
+Mean Absolute Error: 38.88009237125516
+Accuracy score: 0.509641873278237
+Total buy profit: 2196.63134765625
+Total sell profit: -906.2055749511719
+Total profit: 1290.425772705078
+Profit per trade: 3.5548919358266615
+
+DDBL
+
+Future price after 2 days is 1704.73$
+huber_loss loss: 0.0002785067190416157
+Mean Absolute Error: 40.77820589765906
+Accuracy score: 0.4735376044568245
+Total buy profit: -325.72802734375
+Total sell profit: 629.6029357910156
+Total profit: 303.8749084472656
+Profit per trade: 0.8464482129450296
+
+EBL
+
+Future price after 2 days is 807.68$
+huber_loss loss: 0.0002277099119964987
+Mean Absolute Error: 42.82519488595426
+Accuracy score: 0.5382978723404256
+Total buy profit: 3728.048583984375
+Total sell profit: -615.3775939941406
+Total profit: 3112.6709899902344
+Profit per trade: 6.622704234021775
+
+NMB
+
+Future price after 5 days is 421.53$
+huber_loss loss: 0.00026416394393891096
+Mean Absolute Error: 14.81388100795448
+Accuracy score: 0.5856777493606138
+Total buy profit: 955.6856994628906
+Total sell profit: 919.3928070068359
+Total profit: 1875.0785064697266
+Profit per trade: 4.795597203247382
+
+NABIL
+
+Future price after 5 days is 1082.41$
+huber_loss loss: 0.0005324906669557095
+Mean Absolute Error: 58.268670458346605
+Accuracy score: 0.5296610169491526
+Total buy profit: 2518.7010498046875
+Total sell profit: 1731.1622216796875
+Total profit: 4249.863271484375
+Profit per trade: 9.003947609077066

@@ -10,13 +10,14 @@ import json
 import os
 import time
 from ta import add_all_ta_features
-from ta.momentum import StochasticOscillator,StochRSIIndicator
+from ta.momentum import StochasticOscillator,StochRSIIndicator,RSIIndicator,WilliamsRIndicator
+from ta.volatility import AverageTrueRange,BollingerBands,KeltnerChannel
 from ta.trend import MACD
 from ta.utils import dropna
 import numpy as np
 
 
-ticker='NLIC'
+ticker='NLICL'
 
 def start_requests(ticker):
 
@@ -52,23 +53,43 @@ def start_requests(ticker):
         timewindow=14
         df = df.replace(0, np.nan)
 
-        '''
-        df['RSI'] = CalcRSI(df['adjclose'],timewindow)
+
+        #df['RSI'] = CalcRSI(df['adjclose'],timewindow)
+
+        RSI_data=RSIIndicator(close=df['adjclose'], window=timewindow)
+        df['RSI']=RSI_data.rsi()
 
         StochOsc_data = StochasticOscillator(high=df['high'], low=df['low'], close=df['adjclose'])
         df['stoch']=StochOsc_data.stoch()
-        df['stochsignal']=StochOsc_data.stoch_signal()
-        RSI_data = StochRSIIndicator(close=df['adjclose'])
-        df['rsidata']=RSI_data.stochrsi()
-        df['rsidata_k'] = RSI_data.stochrsi_k()
-        df['rsidata_d'] = RSI_data.stochrsi_d()
+        #df['stochsignal']=StochOsc_data.stoch_signal()
+
+        StochRSI_data = StochRSIIndicator(close=df['adjclose'])
+        df['momentum_stoch_rsi']=StochRSI_data.stochrsi()
+        df['momentum_stoch_rsi_k'] = StochRSI_data.stochrsi_k()
+        df['momentum_stoch_rsi_d'] = StochRSI_data.stochrsi_d()
 
         MACD_data = MACD(window_slow=17, window_fast=8,close=df['adjclose'])
         df['macd']=MACD_data.macd()
         df['macddiff'] = MACD_data.macd_diff()
-        df['macdsignal'] = MACD_data.macd_signal()'''
 
-        mom_data = add_all_ta_features(df, open="open", high="high", low="low", close="adjclose", volume="volume")
+        Volatility_data=AverageTrueRange(close=df['adjclose'], high=df['high'], low=df['low'], window=10)
+        df['volatility_atr']=Volatility_data.average_true_range()
+
+        BollingerData=BollingerBands(close=df['adjclose'], window=20)
+        df['volatility_bbm']=BollingerData.bollinger_mavg()
+        df['volatility_bbl']=BollingerData.bollinger_lband()
+        df['volatility_bbh']=BollingerData.bollinger_hband()
+        df['volatility_bbw']=BollingerData.bollinger_wband()
+
+        Keltner_data=KeltnerChannel(close=df['adjclose'], high=df['high'], low=df['low'], window=10)
+        df['volatility_kch']=Keltner_data.keltner_channel_hband()
+        df['volatility_kcl']=Keltner_data.keltner_channel_lband()
+        df['volatility_kcw']=Keltner_data.keltner_channel_wband()
+
+        WilliamsR_data=WilliamsRIndicator(high=df['high'], low=df['low'], close=df['adjclose'], lbp=14)
+        df['WilliamR']=WilliamsR_data.williams_r()
+
+        #ALLTechnical_data = add_all_ta_features(df, open="open", high="high", low="low", close="adjclose", volume="volume")
 
 
 

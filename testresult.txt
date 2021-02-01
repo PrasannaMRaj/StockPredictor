@@ -298,3 +298,63 @@ Future price after 4 days is 2720.45
 huber_loss loss:0.001168396440334618
 Mean Absolute Error:738.3344132602216
 Accuracy score:0.516042780748663
+
+NLICL_EPOCH:10_date_now:2021-02-01_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Features : ['adjclose', 'volume', 'open', 'high', 'low', 'volatility_atr', 'volatility_bbm', 'volatility_bbh', 'volatility_bbl', 'volatility_bbw', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'WilliamR', 'macd', 'macddiff', 'momentum_stoch_rsi', 'momentum_stoch_rsi_d', 'momentum_stoch_rsi_k', 'stoch', 'RSI'] 
+Model Type: AttentionLSTM 
+Future price after 3 days is 1340.95
+huber_loss loss:0.0010652134660631418
+Mean Absolute Error:419.72450629621744
+Accuracy score:0.510989010989011
+
+NLICL_EPOCH:10_date_now:2021-02-01_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Features : ['adjclose', 'volume', 'open', 'high', 'low'] 
+Model Type: AttentionLSTM 
+Future price after 3 days is 1434.43
+huber_loss loss:0.0021698102355003357
+Mean Absolute Error:475.5441789031029
+Accuracy score:0.4835164835164835
+
+NLICL_EPOCH:10_date_now:2021-02-01_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Features : ['adjclose', 'volume', 'open', 'high', 'low', 'volatility_atr', 'volatility_bbm', 'volatility_bbh', 'volatility_bbl', 'volatility_bbw', 'volatility_kch', 'volatility_kcl'] 
+Model Type: AttentionLSTM 
+Future price after 3 days is 1233.18
+huber_loss loss:0.0014181610895320773
+Mean Absolute Error:434.52156189084053
+Accuracy score:0.4478021978021978(highly accurate in graph)
+
+
+
+NLICL_EPOCH:10_date_now:2021-02-01_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Features : ['adjclose', 'volume', 'open', 'high', 'low', 'macd', 'macddiff', 'momentum_stoch_rsi', 'momentum_stoch_rsi_d', 'momentum_stoch_rsi_k', 'stoch', 'RSI'] 
+Model Type: AttentionLSTM 
+Future price after 3 days is 1222.04
+huber_loss loss:0.0011097135720774531
+Mean Absolute Error:417.14400270581245
+Accuracy score:0.5302197802197802
+
+NLICL_EPOCH:10_date_now:2021-02-01_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Features : ['adjclose', 'volume', 'open', 'high', 'low', 'macd', 'macddiff', 'RSI'] 
+Model Type: AttentionLSTM 
+Future price after 3 days is 1126.86
+huber_loss loss:0.0017360311467200518
+Mean Absolute Error:453.23462285101414
+Accuracy score:0.48626373626373626(little low predict in graph than prev)
+
+
+
+NLICL_EPOCH:10_date_now:2021-02-01_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Features : ['adjclose', 'volume', 'open', 'high', 'low', 'volatility_atr', 'macddiff', 'RSI', 'WilliamR'] 
+Model Type: AttentionLSTM 
+Future price after 3 days is 1262.51
+huber_loss loss:0.0010590526508167386
+Mean Absolute Error:418.90055637061596
+Accuracy score:0.5412087912087912
+
+NLICL_EPOCH:10_date_now:2021-02-01_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Features : ['adjclose', 'volume', 'high', 'low', 'WilliamR', 'macd', 'macddiff', 'momentum_stoch_rsi', 'momentum_stoch_rsi_d', 'momentum_stoch_rsi_k', 'stoch', 'RSI'] 
+Model Type: AttentionLSTM 
+Future price after 3 days is 1212.86
+huber_loss loss:0.001079976442269981
+Mean Absolute Error:418.5913165509701
+Accuracy score:0.532967032967033(MOST accurate graph till now)

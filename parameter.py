@@ -21,9 +21,16 @@ split_by_date_str = f"sbd-{int(SPLIT_BY_DATE)}"
 # test ratio size, 0.2 is 20%
 TEST_SIZE = 0.2
 # features to use
-#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "stoch", "RSI","rsidata","macd"]
-FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "volatility_atr", "volatility_bbm","volatility_bbh","volatility_bbl","volatility_bbw","volatility_kch","volatility_kcl","volatility_kcw","trend_macd","trend_macd_diff","momentum_rsi","momentum_stoch_rsi","momentum_stoch_rsi_d","momentum_stoch","momentum_stoch_signal"]
-#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high", "low"]
+
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "volatility_atr", "volatility_bbm","volatility_bbh","volatility_bbl","volatility_bbw","volatility_kch","volatility_kcl","volatility_kcw","WilliamR","macd","macddiff","momentum_stoch_rsi","momentum_stoch_rsi_d","momentum_stoch_rsi_k","stoch","RSI"]
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high", "low"]#original
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "volatility_atr", "volatility_bbm","volatility_bbh","volatility_bbl","volatility_bbw","volatility_kch","volatility_kcl"]  #Accordingtovolatility
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "macd","macddiff","momentum_stoch_rsi","momentum_stoch_rsi_d","momentum_stoch_rsi_k","stoch","RSI"]#Accordingtomomentum
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "macd", "macddiff","RSI"]#AccordingtoTrend
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "volatility_atr", "macddiff","RSI", "WilliamR"]#Mixed
+FEATURE_COLUMNS = ["adjclose", "volume", "high","low", "WilliamR" ,"macd","macddiff","momentum_stoch_rsi","momentum_stoch_rsi_d","momentum_stoch_rsi_k","stoch","RSI"]#Accordingtomomentumwithwilliam
+
+
 # date now
 date_now = time.strftime("%Y-%m-%d")
 #date_now = '2021-01-25'
@@ -53,7 +60,7 @@ EPOCHS = 10 #Changed from prev 500 to 10
 
 # Amazon stock market
 #ticker = "AMZN"
-ticker = "NLIC"
+ticker = "NLICL"
 activationfunction=["linear","tanh","sigmoid","relu","elu","softmax","softplus","softsign","exponential",""]
 
 

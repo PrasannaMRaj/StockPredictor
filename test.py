@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #from stock_prediction import create_model, load_data
 #from stock_predictionNepse import create_model, load_data
 from Attention_test import create_model, load_data #for attention
-
+import pickle
 from parameter import *
 
 
@@ -19,6 +19,8 @@ def plot_graph(test_df):
     plt.xlabel("Days")
     plt.ylabel("Price")
     plt.legend(["Actual Price", "Predicted Price"])
+    plt.savefig(f'{ticker}.svg', format='svg', dpi=1200)
+    #pickle.dump(plt, open(f'FigureObject.fig.pickle', 'wb'))
     plt.show()
 
 
@@ -139,6 +141,9 @@ final_df.to_csv(csv_filename)
 
 file1 = open("testresult.txt","a")
 file1.write(f"\n{ticker}_EPOCH:{EPOCHS}_date_now:{date_now}_SPLIT_BY_DATE:{SPLIT_BY_DATE}_SHUFFLE:{SHUFFLE}_DROPOUT:{DROPOUT}_activation:elu_N_LAYERS:{N_LAYERS}_BATCH_SIZE:{BATCH_SIZE} ")
+file1.write(f"\nFeatures : {FEATURE_COLUMNS} " )
+file1.write("\nModel Type: AttentionLSTM ")
+#file1.write("\nModel Type: StackedLSTM_Bi ")
 file1.write(f"\nFuture price after {LOOKUP_STEP} days is {future_price:.2f}")
 file1.write(f"\n{LOSS} loss:" + str(loss))
 file1.write("\nMean Absolute Error:" + str(mean_absolute_error) )

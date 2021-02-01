@@ -1,239 +1,248 @@
-class AttentionLSTM():
-    """LSTM with attention mechanism
-    This is an LSTM incorporating an attention mechanism into its hidden states.
-    Currently, the context vector calculated from the attended vector is fed
-    into the model's internal states, closely following the model by Xu et al.
-    (2016, Sec. 3.1.2), using a soft attention model following
-    Bahdanau et al. (2014).
-    The layer expects two inputs instead of the usual one:
-        1. the "normal" layer input; and
-        2. a 3D vector to attend.
-    Args:
-        attn_activation: Activation function for attentional components
-        attn_init: Initialization function for attention weights
-        output_alpha (boolean): If true, outputs the alpha values, i.e.,
-            what parts of the attention vector the layer attends to at each
-            timestep.
-    References:
-        * Bahdanau, Cho & Bengio (2014), "Neural Machine Translation by Jointly
-          Learning to Align and Translate", <https://arxiv.org/pdf/1409.0473.pdf>
-        * Xu, Ba, Kiros, Cho, Courville, Salakhutdinov, Zemel & Bengio (2016),
-          "Show, Attend and Tell: Neural Image Caption Generation with Visual
-          Attention", <http://arxiv.org/pdf/1502.03044.pdf>
-    See Also:
-        `LSTM`_ in the Keras documentation.
-        .. _LSTM: http://keras.io/layers/recurrent/#lstm
-    """
-    def __init__(self, *args, attn_activation='tanh', attn_init='orthogonal',
-                 output_alpha=False, **kwargs):
-        self.attn_activation = activations.get(attn_activation)
-        self.attn_init = initializations.get(attn_init)
-        self.output_alpha = output_alpha
-        super().__init__(*args, **kwargs)
+from tensorflow.keras.layers import Layer
+from tensorflow.keras import initializers, regularizers, constraints
+#from tensorflow.keras.engine.input_layer import Input
+from tensorflow.keras import Input
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import BatchNormalization
+
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense, Dropout, Bidirectional
+from sklearn import preprocessing
+from sklearn.model_selection import train_test_split
+from yahoo_fin import stock_info as si
+from collections import deque
+
+import numpy as np
+import pandas as pd
+import random
+
+#from tensorflow.keras.layers import Layer
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Dense, Lambda, dot, Activation, concatenate
+
+
+class Attention(Layer):
+    def __init__(self, step_dim,
+                 W_regularizer=None, b_regularizer=None,
+                 W_constraint=None, b_constraint=None,
+                 bias=True, **kwargs):
+        self.supports_masking = True
+        self.init = initializers.get('glorot_uniform')
+
+        self.W_regularizer = regularizers.get(W_regularizer)
+        self.b_regularizer = regularizers.get(b_regularizer)
+
+        self.W_constraint = constraints.get(W_constraint)
+        self.b_constraint = constraints.get(b_constraint)
+
+        self.bias = bias
+        self.step_dim = step_dim
+        self.features_dim = 0
+        super(Attention, self).__init__(**kwargs)
 
     def build(self, input_shape):
-        if not (isinstance(input_shape, list) and len(input_shape) == 2):
-            raise Exception('Input to AttentionLSTM must be a list of '
-                            'two tensors [lstm_input, attn_input].')
+        assert len(input_shape) == 3
 
-        input_shape, attn_input_shape = input_shape
-        super().build(input_shape)
-        self.input_spec.append(InputSpec(shape=attn_input_shape))
+        self.W = self.add_weight(shape=(input_shape[-1],),
+                                 initializer=self.init,
+                                 name='{}_W'.format(self.name),
+                                 regularizer=self.W_regularizer,
+                                 constraint=self.W_constraint)
+        self.features_dim = input_shape[-1]
 
-        # weights for attention model
-        self.U_att = self.inner_init((self.output_dim, self.output_dim),
-                                     name='{}_U_att'.format(self.name))
-        self.W_att = self.attn_init((attn_input_shape[-1], self.output_dim),
-                                    name='{}_W_att'.format(self.name))
-        self.v_att = self.init((self.output_dim, 1),
-                               name='{}_v_att'.format(self.name))
-        self.b_att = K.zeros((self.output_dim,), name='{}_b_att'.format(self.name))
-        self.trainable_weights += [self.U_att, self.W_att, self.v_att, self.b_att]
-
-        # weights for incorporating attention into hidden states
-        if self.consume_less == 'gpu':
-            self.Z = self.init((attn_input_shape[-1], 4 * self.output_dim),
-                               name='{}_Z'.format(self.name))
-            self.trainable_weights += [self.Z]
+        if self.bias:
+            self.b = self.add_weight(shape=(input_shape[1],),
+                                     initializer='zero',
+                                     name='{}_b'.format(self.name),
+                                     regularizer=self.b_regularizer,
+                                     constraint=self.b_constraint)
         else:
-            self.Z_i = self.attn_init((attn_input_shape[-1], self.output_dim),
-                                      name='{}_Z_i'.format(self.name))
-            self.Z_f = self.attn_init((attn_input_shape[-1], self.output_dim),
-                                      name='{}_Z_f'.format(self.name))
-            self.Z_c = self.attn_init((attn_input_shape[-1], self.output_dim),
-                                      name='{}_Z_c'.format(self.name))
-            self.Z_o = self.attn_init((attn_input_shape[-1], self.output_dim),
-                                      name='{}_Z_o'.format(self.name))
-            self.trainable_weights += [self.Z_i, self.Z_f, self.Z_c, self.Z_o]
-            self.Z = K.concatenate([self.Z_i, self.Z_f, self.Z_c, self.Z_o])
+            self.b = None
 
-        # weights for initializing states based on attention vector
-        if not self.stateful:
-            self.W_init_c = self.attn_init((attn_input_shape[-1], self.output_dim),
-                                           name='{}_W_init_c'.format(self.name))
-            self.W_init_h = self.attn_init((attn_input_shape[-1], self.output_dim),
-                                           name='{}_W_init_h'.format(self.name))
-            self.b_init_c = K.zeros((self.output_dim,),
-                                    name='{}_b_init_c'.format(self.name))
-            self.b_init_h = K.zeros((self.output_dim,),
-                                    name='{}_b_init_h'.format(self.name))
-            self.trainable_weights += [self.W_init_c, self.b_init_c,
-                                       self.W_init_h, self.b_init_h]
-
-        if self.initial_weights is not None:
-            self.set_weights(self.initial_weights)
-            del self.initial_weights
-
-    def get_output_shape_for(self, input_shape):
-        # output shape is not affected by the attention component
-        return super().get_output_shape_for(input_shape[0])
+        self.built = True
 
     def compute_mask(self, input, input_mask=None):
-        if input_mask is not None:
-            input_mask = input_mask[0]
-        return super().compute_mask(input, input_mask=input_mask)
-
-    def get_initial_states(self, x_input, x_attn, mask_attn):
-        # set initial states from mean attention vector fed through a dense
-        # activation
-        mean_attn = K.mean(x_attn * K.expand_dims(mask_attn), axis=1)
-        h0 = K.dot(mean_attn, self.W_init_h) + self.b_init_h
-        c0 = K.dot(mean_attn, self.W_init_c) + self.b_init_c
-        return [self.attn_activation(h0), self.attn_activation(c0)]
+        return None
 
     def call(self, x, mask=None):
-        assert isinstance(x, list) and len(x) == 2
-        x_input, x_attn = x
+        features_dim = self.features_dim
+        step_dim = self.step_dim
+
+        eij = K.reshape(K.dot(K.reshape(x, (-1, features_dim)),
+                              K.reshape(self.W, (features_dim, 1))), (-1, step_dim))
+
+        if self.bias:
+            eij += self.b
+
+        eij = K.tanh(eij)
+
+        a = K.exp(eij)
+
         if mask is not None:
-            mask_input, mask_attn = mask
-        else:
-            mask_input, mask_attn = None, None
-        # input shape: (nb_samples, time (padded with zeros), input_dim)
-        input_shape = self.input_spec[0].shape
-        if K._BACKEND == 'tensorflow':
-            if not input_shape[1]:
-                raise Exception('When using TensorFlow, you should define '
-                                'explicitly the number of timesteps of '
-                                'your sequences.\n'
-                                'If your first layer is an Embedding, '
-                                'make sure to pass it an "input_length" '
-                                'argument. Otherwise, make sure '
-                                'the first layer has '
-                                'an "input_shape" or "batch_input_shape" '
-                                'argument, including the time axis. '
-                                'Found input shape at layer ' + self.name +
-                                ': ' + str(input_shape))
-        if self.stateful:
-            initial_states = self.states
-        else:
-            initial_states = self.get_initial_states(x_input, x_attn, mask_attn)
-        constants = self.get_constants(x_input, x_attn, mask_attn)
-        preprocessed_input = self.preprocess_input(x_input)
+            a *= K.cast(mask, K.floatx())
 
-        last_output, outputs, states = K.rnn(self.step, preprocessed_input,
-                                             initial_states,
-                                             go_backwards=self.go_backwards,
-                                             mask=mask_input,
-                                             constants=constants,
-                                             unroll=self.unroll,
-                                             input_length=input_shape[1])
-        if self.stateful:
-            self.updates = []
-            for i in range(len(states)):
-                self.updates.append((self.states[i], states[i]))
+        a /= K.cast(K.sum(a, axis=1, keepdims=True) + K.epsilon(), K.floatx())
 
-        if self.return_sequences:
-            return outputs
-        else:
-            return last_output
+        a = K.expand_dims(a)
+        weighted_input = x * a
+        return K.sum(weighted_input, axis=1)
 
-    def step(self, x, states):
-        h_tm1 = states[0]
-        c_tm1 = states[1]
-        B_U = states[2]
-        B_W = states[3]
-        x_attn = states[4]
-        mask_attn = states[5]
-        attn_shape = self.input_spec[1].shape
+    def compute_output_shape(self, input_shape):
+        return input_shape[0], self.features_dim
 
-        #### attentional component
-        # alignment model
-        # -- keeping weight matrices for x_attn and h_s separate has the advantage
-        # that the feature dimensions of the vectors can be different
-        h_att = K.repeat(h_tm1, attn_shape[1])
-        att = time_distributed_dense(x_attn, self.W_att, self.b_att)
-        energy = self.attn_activation(K.dot(h_att, self.U_att) + att)
-        energy = K.squeeze(K.dot(energy, self.v_att), 2)
-        # make probability tensor
-        alpha = K.exp(energy)
-        if mask_attn is not None:
-            alpha *= mask_attn
-        alpha /= K.sum(alpha, axis=1, keepdims=True)
-        alpha_r = K.repeat(alpha, attn_shape[2])
-        alpha_r = K.permute_dimensions(alpha_r, (0, 2, 1))
-        # make context vector -- soft attention after Bahdanau et al.
-        z_hat = x_attn * alpha_r
-        z_hat = K.sum(z_hat, axis=1)
+# set seed, so we can get the same results after rerunning several times
+np.random.seed(314)
+tf.random.set_seed(314)
+random.seed(314)
 
-        if self.consume_less == 'gpu':
-            z = K.dot(x * B_W[0], self.W) + K.dot(h_tm1 * B_U[0], self.U) \
-                + K.dot(z_hat, self.Z) + self.b
 
-            z0 = z[:, :self.output_dim]
-            z1 = z[:, self.output_dim: 2 * self.output_dim]
-            z2 = z[:, 2 * self.output_dim: 3 * self.output_dim]
-            z3 = z[:, 3 * self.output_dim:]
-        else:
-            if self.consume_less == 'cpu':
-                x_i = x[:, :self.output_dim]
-                x_f = x[:, self.output_dim: 2 * self.output_dim]
-                x_c = x[:, 2 * self.output_dim: 3 * self.output_dim]
-                x_o = x[:, 3 * self.output_dim:]
-            elif self.consume_less == 'mem':
-                x_i = K.dot(x * B_W[0], self.W_i) + self.b_i
-                x_f = K.dot(x * B_W[1], self.W_f) + self.b_f
-                x_c = K.dot(x * B_W[2], self.W_c) + self.b_c
-                x_o = K.dot(x * B_W[3], self.W_o) + self.b_o
-            else:
-                raise Exception('Unknown `consume_less` mode.')
+def shuffle_in_unison(a, b):
+    # shuffle two arrays in the same way
+    state = np.random.get_state()
+    np.random.shuffle(a)
+    np.random.set_state(state)
+    np.random.shuffle(b)
 
-            z0 = x_i + K.dot(h_tm1 * B_U[0], self.U_i) + K.dot(z_hat, self.Z_i)
-            z1 = x_f + K.dot(h_tm1 * B_U[1], self.U_f) + K.dot(z_hat, self.Z_f)
-            z2 = x_c + K.dot(h_tm1 * B_U[2], self.U_c) + K.dot(z_hat, self.Z_c)
-            z3 = x_o + K.dot(h_tm1 * B_U[3], self.U_o) + K.dot(z_hat, self.Z_o)
 
-        i = self.inner_activation(z0)
-        f = self.inner_activation(z1)
-        c = f * c_tm1 + i * self.activation(z2)
-        o = self.inner_activation(z3)
+def load_data(ticker, n_steps=50, scale=True, shuffle=True, lookup_step=1, split_by_date=True,
+              test_size=0.2, feature_columns=['adjclose', 'volume', 'open', 'high', 'low']):
+    """
+    Loads data from Yahoo Finance source, as well as scaling, shuffling, normalizing and splitting.
+    Params:
+        ticker (str/pd.DataFrame): the ticker you want to load, examples include AAPL, TESL, etc.
+        n_steps (int): the historical sequence length (i.e window size) used to predict, default is 50
+        scale (bool): whether to scale prices from 0 to 1, default is True
+        shuffle (bool): whether to shuffle the dataset (both training & testing), default is True
+        lookup_step (int): the future lookup step to predict, default is 1 (e.g next day)
+        split_by_date (bool): whether we split the dataset into training/testing by date, setting it
+            to False will split datasets in a random way
+        test_size (float): ratio for test data, default is 0.2 (20% testing data)
+        feature_columns (list): the list of features to use to feed into the model, default is everything grabbed from yahoo_fin
+    """
+    # see if ticker is already a loaded stock from yahoo finance
+    if isinstance(ticker, str):
+        # load it from yahoo_fin library
+        #df = si.get_data(ticker)
+        df = pd.read_csv(f'{ticker}.csv', parse_dates=True, index_col=0)
+    elif isinstance(ticker, pd.DataFrame):
+        # already loaded, use it directly
+        df = ticker
+    else:
+        raise TypeError("ticker can be either a str or a `pd.DataFrame` instances")
 
-        h = o * self.activation(c)
-        if self.output_alpha:
-            return alpha, [h, c]
-        else:
-            return h, [h, c]
 
-    def get_constants(self, x_input, x_attn, mask_attn):
-        constants = super().get_constants(x_input)
-        attn_shape = self.input_spec[1].shape
-        if mask_attn is not None:
-            if K.ndim(mask_attn) == 3:
-                mask_attn = K.all(mask_attn, axis=-1)
-        constants.append(x_attn)
-        constants.append(mask_attn)
-        return constants
+    # this will contain all the elements we want to return from this function
+    result = {}
+    # we will also return the original dataframe itself
+    result['df'] = df.copy()
 
-    def get_config(self):
-        cfg = super().get_config()
-        cfg['output_alpha'] = self.output_alpha
-        cfg['attn_activation'] = self.attn_activation.__name__
-        return cfg
+    # make sure that the passed feature_columns exist in the dataframe
+    for col in feature_columns:
+        assert col in df.columns, f"'{col}' does not exist in the dataframe."
 
-    @classmethod
-    def from_config(cls, config):
-        instance = super(AttentionLSTM, cls).from_config(config)
-        if 'output_alpha' in config:
-            instance.output_alpha = config['output_alpha']
-        if 'attn_activation' in config:
-            instance.attn_activation = activations.get(config['attn_activation'])
-        return instance
+    # add date as a column
+    if "date" not in df.columns:
+        df["date"] = df.index
+
+    if scale:
+        column_scaler = {}
+        # scale the data (prices) from 0 to 1
+        for column in feature_columns:
+            scaler = preprocessing.MinMaxScaler()
+            df[column] = scaler.fit_transform(np.expand_dims(df[column].values, axis=1))
+            column_scaler[column] = scaler
+
+        # add the MinMaxScaler instances to the result returned
+        result["column_scaler"] = column_scaler
+
+    # add the target column (label) by shifting by `lookup_step`
+    df['future'] = df['adjclose'].shift(-lookup_step)
+
+    # last `lookup_step` columns contains NaN in future column
+    # get them before droping NaNs
+    last_sequence = np.array(df[feature_columns].tail(lookup_step))
+
+    # drop NaNs
+    df.dropna(inplace=True)
+
+    sequence_data = []
+    sequences = deque(maxlen=n_steps)
+
+    for entry, target in zip(df[feature_columns + ["date"]].values, df['future'].values):
+        sequences.append(entry)
+        if len(sequences) == n_steps:
+            sequence_data.append([np.array(sequences), target])
+
+    # get the last sequence by appending the last `n_step` sequence with `lookup_step` sequence
+    # for instance, if n_steps=50 and lookup_step=10, last_sequence should be of 60 (that is 50+10) length
+    # this last_sequence will be used to predict future stock prices that are not available in the dataset
+    last_sequence = list([s[:len(feature_columns)] for s in sequences]) + list(last_sequence)
+    last_sequence = np.array(last_sequence).astype(np.float32)
+    # add to result
+    result['last_sequence'] = last_sequence
+
+    # construct the X's and y's
+    X, y = [], []
+    for seq, target in sequence_data:
+        X.append(seq)
+        y.append(target)
+
+    # convert to numpy arrays
+    X = np.array(X)
+    y = np.array(y)
+
+    if split_by_date:
+        # split the dataset into training & testing sets by date (not randomly splitting)
+        train_samples = int((1 - test_size) * len(X))
+        result["X_train"] = X[:train_samples]
+        result["y_train"] = y[:train_samples]
+        result["X_test"] = X[train_samples:]
+        result["y_test"] = y[train_samples:]
+        if shuffle:
+            # shuffle the datasets for training (if shuffle parameter is set)
+            shuffle_in_unison(result["X_train"], result["y_train"])
+            shuffle_in_unison(result["X_test"], result["y_test"])
+    else:
+        # split the dataset randomly
+        result["X_train"], result["X_test"], result["y_train"], result["y_test"] = train_test_split(X, y,
+                                                                                                    test_size=test_size,
+                                                                                                    shuffle=shuffle)
+
+    # get the list of test set dates
+    dates = result["X_test"][:, -1, -1]
+    # retrieve test features from the original dataframe
+    result["test_df"] = result["df"].loc[dates]
+    # remove duplicated dates in the testing dataframe
+    result["test_df"] = result["test_df"][~result["test_df"].index.duplicated(keep='first')]
+    # remove dates from the training/testing sets & convert to float32
+    result["X_train"] = result["X_train"][:, :, :len(feature_columns)].astype(np.float32)
+    result["X_test"] = result["X_test"][:, :, :len(feature_columns)].astype(np.float32)
+
+    return result
+
+
+def create_model(sequence_length, n_features, units=256, cell=LSTM, n_layers=2, dropout=0.3,
+                 loss="mean_absolute_error", optimizer="rmsprop", bidirectional=False):
+    inp = Input(shape=(sequence_length, n_features))
+    x = Bidirectional(cell(units, return_sequences=True))(inp)
+    x = Dropout(dropout)(x)
+    x = Attention(sequence_length)(x)
+    x = Dropout(dropout)(x)
+    x = Dense(32, activation="elu")(x)
+    x = Dropout(dropout)(x)
+    x = Dense(1, activation="linear")(x)
+    model_lstm_attention = Model(inputs=inp, outputs=x)
+    #model.add(Dense(1, activation="elu"))
+    # model.add(Dense(1))
+    model_lstm_attention.compile(loss=loss, metrics=["mean_absolute_error"], optimizer=optimizer)
+    model_lstm_attention.summary()
+
+
+
+    return model_lstm_attention
+
+
+
+

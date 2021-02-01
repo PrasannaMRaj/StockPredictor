@@ -1,5 +1,6 @@
 #from stock_prediction import create_model, load_data
-from stock_predictionNepse import create_model, load_data
+#from stock_predictionNepse import create_model, load_data
+from Attention_test import create_model, load_data #for attention
 from tensorflow.keras.layers import LSTM
 from tensorflow.keras.callbacks import ModelCheckpoint, TensorBoard
 import os

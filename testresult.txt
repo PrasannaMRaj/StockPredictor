@@ -195,3 +195,51 @@ Future price after 5 days is 3944.87
 huber_loss loss:0.001433864003047347
 Mean Absolute Error:1376.2561144712568
 Accuracy score:0.5813953488372093
+
+NABIL_EPOCH:10_date_now:2021-01-25_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:2_BATCH_SIZE:32 _old features
+Future price after 5 days is 1068.65
+huber_loss loss:0.0006329335737973452
+Mean Absolute Error:703.7773575261234
+Accuracy score:0.4910941475826972
+
+NABIL_EPOCH:10_date_now:2021-01-25_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:2_BATCH_SIZE:32 _new feature
+Future price after 5 days is 1089.96
+huber_loss loss:0.0005299432086758316
+Mean Absolute Error:710.1020269468426
+Accuracy score:0.47837150127226463
+
+NABIL_EPOCH:10_date_now:2021-01-25_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:2_BATCH_SIZE:50 _new feature
+Future price after 5 days is 1097.70
+huber_loss loss:0.0008841956150718033
+Mean Absolute Error:719.0700570121406
+Accuracy score:0.5572519083969466
+
+NABIL_EPOCH:10_date_now:2021-01-25_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 _new feature
+Future price after 4 days is 1108.96
+huber_loss loss:0.0007510508876293898
+Mean Absolute Error:714.1913924738764
+Accuracy score:0.6055979643765903(most accurate till now)
+
+NABIL_EPOCH:10_date_now:2021-01-25_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 _atttention
+Future price after 4 days is 1178.22
+huber_loss loss:0.001278732088394463
+Mean Absolute Error:735.0710203126072
+Accuracy score:0.5801526717557252
+
+NABIL_EPOCH:10_date_now:2021-01-25_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 _attention_dense=32
+Future price after 4 days is 1177.35
+huber_loss loss:0.0014122114516794682
+Mean Absolute Error:736.3836846128105
+Accuracy score:0.5419847328244275
+
+NABIL_EPOCH:50_date_now:2021-01-25_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 _attention_bi
+Future price after 4 days is 1166.11
+huber_loss loss:0.0007742910529486835
+Mean Absolute Error:716.8800434470176
+Accuracy score:0.5648854961832062
+
+NABIL_EPOCH:50_date_now:2021-01-25_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:50 
+Future price after 4 days is 1157.94
+huber_loss loss:0.0006401907885447145
+Mean Absolute Error:708.1387920305132
+Accuracy score:0.544529262086514(split by date not good)

@@ -3,7 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #from stock_prediction import create_model, load_data
-from stock_predictionNepse import create_model, load_data
+#from stock_predictionNepse import create_model, load_data
+from Attention_test import create_model, load_data #for attention
+
 from parameter import *
 
 

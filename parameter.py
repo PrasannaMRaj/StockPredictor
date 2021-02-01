@@ -5,7 +5,7 @@ from tensorflow.keras.layers import LSTM
 # Window size or the sequence length
 N_STEPS = 50
 # Lookup step, 1 is the next day
-LOOKUP_STEP = 5 #changed from 15 to 5
+LOOKUP_STEP = 4 #changed from 15 to 5
 
 # whether to scale feature columns & output price as well
 SCALE = True
@@ -21,16 +21,16 @@ split_by_date_str = f"sbd-{int(SPLIT_BY_DATE)}"
 # test ratio size, 0.2 is 20%
 TEST_SIZE = 0.2
 # features to use
-#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "stoch", "RSI","rsidata","macd"]
-FEATURE_COLUMNS = ["adjclose", "volume", "open", "high", "low"]
+FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "stoch", "RSI","rsidata","macd"]
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high", "low"]
 # date now
 #date_now = time.strftime("%Y-%m-%d")
-date_now = '2021-01-21'
+date_now = '2021-01-25'
 #print(date_now)
 
 ### model parameters
 
-N_LAYERS = 2#changd from original 2
+N_LAYERS = 3#changd from original 2
 # LSTM cell
 CELL = LSTM
 # 256 LSTM neurons
@@ -47,12 +47,12 @@ BIDIRECTIONAL = True
 # huber loss
 LOSS = "huber_loss"
 OPTIMIZER = "adam"
-BATCH_SIZE = 32
-EPOCHS = 10 #Changed from prev 500 to 10
+BATCH_SIZE = 50
+EPOCHS = 50 #Changed from prev 500 to 10
 
 # Amazon stock market
 #ticker = "AMZN"
-ticker = "MICROFINANCE"
+ticker = "NABIL"
 activationfunction=["linear","tanh","sigmoid","relu","elu","softmax","softplus","softsign","exponential",""]
 
 

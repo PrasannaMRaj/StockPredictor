@@ -16,7 +16,7 @@ from ta.utils import dropna
 import numpy as np
 
 
-ticker='MICROFINANCE'
+ticker='NABIL'
 
 def start_requests(ticker):
 
@@ -45,7 +45,9 @@ def start_requests(ticker):
         #df['date'] = datetime.datetime.fromtimestamp(df['date']).strftime('%Y-%m-%d')
         #df['date']= df['date'].date()
         #df['date'] = pd.to_datetime(df['date'].astype(int), unit='s')
-        df['date'] = df['date'].map(lambda val: datetime.datetime.fromtimestamp(val).strftime('%Y-%m-%d'))
+        del df['date']
+        #<-df['date'] = df['date'].map(lambda val: datetime.datetime.fromtimestamp(val).strftime('%Y-%m-%d'))
+        #<-df['date'] = pd.to_datetime(df['date'])
         #df['date'] = pd.to_datetime(df['date'], unit='s').dt.strftime('%Y-%m-%d')
         timewindow=14
         df = df.replace(0, np.nan)
@@ -67,7 +69,7 @@ def start_requests(ticker):
 
 
 
-        df.to_csv(f'{ticker}.csv', index=False, encoding="utf-8")
+        df.to_csv(f'{ticker}.csv', index=True, encoding="utf-8")
 
 def AddTechnicalIndicators(wholedata):
         #wholedata is the dataframe containing csv data of stock

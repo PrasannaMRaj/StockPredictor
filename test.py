@@ -1,27 +1,30 @@
 import numpy as np
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 #from stock_prediction import create_model, load_data
-#from stock_predictionNepse import create_model, load_data
-from Attention_test import create_model, load_data #for attention
+from stock_predictionNepse import create_model, load_data
+#from Attention_test import create_model, load_data #for attention
 import pickle
 from parameter import *
+import pandas as pd
 
 
-def plot_graph(test_df):
+def plot_graph(test_df,tickername):
     """
     This function plots true close price along with predicted close price
     with blue and red colors respectively
     """
+    import matplotlib.pyplot as plt
     plt.plot(test_df[f'true_adjclose_{LOOKUP_STEP}'], c='b')
     plt.plot(test_df[f'adjclose_{LOOKUP_STEP}'], c='r')
     plt.xlabel("Days")
     plt.ylabel("Price")
     plt.legend(["Actual Price", "Predicted Price"])
-    plt.savefig(f'{ticker}.svg', format='svg', dpi=1200)
+    plt.savefig(f'{tickername}.svg', format='svg', dpi=1200)
     #pickle.dump(plt, open(f'FigureObject.fig.pickle', 'wb'))
-    plt.show()
+    #plt.show()
+    plt.close()
 
 
 def get_final_df(model, data):
@@ -85,67 +88,96 @@ def predict(model, data):
     return predicted_price
 
 
-# load the data
-data = load_data(ticker, N_STEPS, scale=SCALE, split_by_date=SPLIT_BY_DATE,
-                shuffle=SHUFFLE, lookup_step=LOOKUP_STEP, test_size=TEST_SIZE,
-                feature_columns=FEATURE_COLUMNS)
+def Test_function(tickername):
 
-# construct the model
-model = create_model(N_STEPS, len(FEATURE_COLUMNS), loss=LOSS, units=UNITS, cell=CELL, n_layers=N_LAYERS,
-                    dropout=DROPOUT, optimizer=OPTIMIZER, bidirectional=BIDIRECTIONAL)
+    # load the data
+    data = load_data(tickername, N_STEPS, scale=SCALE, split_by_date=SPLIT_BY_DATE,
+                    shuffle=SHUFFLE, lookup_step=LOOKUP_STEP, test_size=TEST_SIZE,
+                    feature_columns=FEATURE_COLUMNS)
 
-# load optimal model weights from results folder
-model_path = os.path.join("results", model_name) + ".h5"
-model.load_weights(model_path)
-
-# evaluate the model
-loss, mae = model.evaluate(data["X_test"], data["y_test"], verbose=0)
-# calculate the mean absolute error (inverse scaling)
-if SCALE:
-    mean_absolute_error = data["column_scaler"]["adjclose"].inverse_transform([[mae]])[0][0]
-else:
-    mean_absolute_error = mae
-
-# get the final dataframe for the testing set
-final_df = get_final_df(model, data)
-# predict the future price
-future_price = predict(model, data)
-# we calculate the accuracy by counting the number of positive profits
-accuracy_score = (len(final_df[final_df['sell_profit'] > 0]) + len(final_df[final_df['buy_profit'] > 0])) / len(final_df)
-# calculating total buy & sell profit
-total_buy_profit  = final_df["buy_profit"].sum()
-total_sell_profit = final_df["sell_profit"].sum()
-# total profit by adding sell & buy together
-total_profit = total_buy_profit + total_sell_profit
-# dividing total profit by number of testing samples (number of trades)
-profit_per_trade = total_profit / len(final_df)
-# printing metrics
-print(f"Future price after {LOOKUP_STEP} days is {future_price:.2f}$")
-print(f"{LOSS} loss:", loss)
-print("Mean Absolute Error:", mean_absolute_error)
-print("Accuracy score:", accuracy_score)
-print("Total buy profit:", total_buy_profit)
-print("Total sell profit:", total_sell_profit)
-print("Total profit:", total_profit)
-print("Profit per trade:", profit_per_trade)
-# plot true/pred prices graph
-plot_graph(final_df)
-print(final_df.tail(10))
-# save the final dataframe to csv-results folder
-csv_results_folder = "csv-results"
-if not os.path.isdir(csv_results_folder):
-    os.mkdir(csv_results_folder)
-csv_filename = os.path.join(csv_results_folder, model_name + ".csv")
-final_df.to_csv(csv_filename)
+    # construct the model
+    model = create_model(N_STEPS, len(FEATURE_COLUMNS), loss=LOSS, units=UNITS, cell=CELL, n_layers=N_LAYERS,
+                        dropout=DROPOUT, optimizer=OPTIMIZER, bidirectional=BIDIRECTIONAL)
 
 
-file1 = open("testresult.txt","a")
-file1.write(f"\n{ticker}_EPOCH:{EPOCHS}_date_now:{date_now}_SPLIT_BY_DATE:{SPLIT_BY_DATE}_SHUFFLE:{SHUFFLE}_DROPOUT:{DROPOUT}_activation:elu_N_LAYERS:{N_LAYERS}_BATCH_SIZE:{BATCH_SIZE} ")
-file1.write(f"\nFeatures : {FEATURE_COLUMNS} " )
-file1.write("\nModel Type: AttentionLSTM ")
-#file1.write("\nModel Type: StackedLSTM_Bi ")
-file1.write(f"\nFuture price after {LOOKUP_STEP} days is {future_price:.2f}")
-file1.write(f"\n{LOSS} loss:" + str(loss))
-file1.write("\nMean Absolute Error:" + str(mean_absolute_error) )
-file1.write("\nAccuracy score:" + str(accuracy_score) +"\n")
-file1.close()
+    model_nameLoop=f"{date_now}_{tickername}-{shuffle_str}-{scale_str}-{split_by_date_str}-{LOSS}-{OPTIMIZER}-{CELL.__name__}-seq-{N_STEPS}-step-{LOOKUP_STEP}-layers-{N_LAYERS}-units-{UNITS}"
+    if BIDIRECTIONAL:
+        model_nameLoop += "-b"
+
+    # load optimal model weights from results folder
+    model_path = os.path.join("results", model_nameLoop) + ".h5"
+    model.load_weights(model_path)
+
+    # evaluate the model
+    loss, mae = model.evaluate(data["X_test"], data["y_test"], verbose=0)
+    # calculate the mean absolute error (inverse scaling)
+    if SCALE:
+        mean_absolute_error = data["column_scaler"]["adjclose"].inverse_transform([[mae]])[0][0]
+    else:
+        mean_absolute_error = mae
+
+    # get the final dataframe for the testing set
+    final_df = get_final_df(model, data)
+
+    #df_original = pd.read_csv(f'{tickername}.csv', parse_dates=True, index_col=0)
+
+
+
+    # predict the future price
+    future_price = predict(model, data)
+    output_pred=[]
+    print("----------------------------")
+    print(final_df[f'adjclose_{LOOKUP_STEP}'])
+    print(final_df[f'adjclose_{LOOKUP_STEP}'].iloc[-1])
+
+    if ((final_df[f'adjclose_{LOOKUP_STEP}'].iloc[-1]- future_price)>20):
+        output_pred="SELL"
+    elif((final_df[f'adjclose_{LOOKUP_STEP}'].iloc[-1] - future_price)<(-20)):
+        output_pred="BUY"
+    else:
+        output_pred="HOLD"
+    print(output_pred)
+    print("----------------------------")
+
+
+    # we calculate the accuracy by counting the number of positive profits
+    accuracy_score = (len(final_df[final_df['sell_profit'] > 0]) + len(final_df[final_df['buy_profit'] > 0])) / len(final_df)
+    # calculating total buy & sell profit
+    total_buy_profit  = final_df["buy_profit"].sum()
+    total_sell_profit = final_df["sell_profit"].sum()
+    # total profit by adding sell & buy together
+    total_profit = total_buy_profit + total_sell_profit
+    # dividing total profit by number of testing samples (number of trades)
+    profit_per_trade = total_profit / len(final_df)
+    # printing metrics
+    print(f"Future price after {LOOKUP_STEP} days is {future_price:.2f}$")
+    print(f"{LOSS} loss:", loss)
+    print("Mean Absolute Error:", mean_absolute_error)
+    print("Accuracy score:", accuracy_score)
+    print("Total buy profit:", total_buy_profit)
+    print("Total sell profit:", total_sell_profit)
+    print("Total profit:", total_profit)
+    print("Profit per trade:", profit_per_trade)
+    # plot true/pred prices graph
+    plot_graph(final_df,tickername)
+    print(final_df.tail(10))
+    # save the final dataframe to csv-results folder
+    csv_results_folder = "csv-results"
+    if not os.path.isdir(csv_results_folder):
+        os.mkdir(csv_results_folder)
+    csv_filename = os.path.join(csv_results_folder, model_nameLoop + ".csv")
+    final_df.to_csv(csv_filename)
+
+
+    file1 = open("testresult.txt","a")
+    file1.write(f"\nN_STEPS: {N_STEPS}")
+    file1.write(f"\n{tickername}_EPOCH:{EPOCHS}_date_now:{date_now}_SPLIT_BY_DATE:{SPLIT_BY_DATE}_SHUFFLE:{SHUFFLE}_DROPOUT:{DROPOUT}_activation:elu_N_LAYERS:{N_LAYERS}_BATCH_SIZE:{BATCH_SIZE} ")
+    file1.write(f"\nFeatures : {FEATURE_COLUMNS} " )
+    #file1.write("\nModel Type: AttentionLSTM ")
+    file1.write("\nModel Type: StackedLSTM_Bi ")
+    file1.write(f"\nFuture price after {LOOKUP_STEP} days is {future_price:.2f}")
+    file1.write("\noutput signal: "+ str(output_pred))
+    file1.write(f"\n{LOSS} loss:" + str(loss))
+    file1.write("\nMean Absolute Error:" + str(mean_absolute_error) )
+    file1.write("\nAccuracy score:" + str(accuracy_score) +"\n")
+    file1.close()

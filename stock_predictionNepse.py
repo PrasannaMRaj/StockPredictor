@@ -193,13 +193,15 @@ def create_model(sequence_length, n_features, units=256, cell=LSTM, n_layers=2, 
                 model.add(Bidirectional(cell(units, return_sequences=True)))
             else:
                 model.add(cell(units, return_sequences=True))
+            #model.add(Dense(1, activation="sigmoid"))
         # add dropout after each layer
         model.add(Dropout(dropout))
         #if i==0:
             #model.add(Attention(return_sequences=True))
 
 
-    model.add(Dense(1, activation="elu"))
+    model.add(Dense(1, activation="linear")) #original linear
     #model.add(Dense(1))
     model.compile(loss=loss, metrics=["mean_absolute_error"], optimizer=optimizer)
+
     return model

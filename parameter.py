@@ -3,9 +3,9 @@ import time
 from tensorflow.keras.layers import LSTM
 
 # Window size or the sequence length
-N_STEPS = 50
+N_STEPS = 26 #128 imp number
 # Lookup step, 1 is the next day
-LOOKUP_STEP = 3 #changed from 15 to 5
+LOOKUP_STEP = 7 #changed from 15 to 5
 
 # whether to scale feature columns & output price as well
 SCALE = True
@@ -15,8 +15,8 @@ SHUFFLE = True
 #SHUFFLE = False
 shuffle_str = f"sh-{int(SHUFFLE)}"
 # whether to split the training/testing set by date
-SPLIT_BY_DATE = False
-#SPLIT_BY_DATE = True #changed from prev False
+#SPLIT_BY_DATE = False
+SPLIT_BY_DATE = True #changed from prev False
 split_by_date_str = f"sbd-{int(SPLIT_BY_DATE)}"
 # test ratio size, 0.2 is 20%
 TEST_SIZE = 0.2
@@ -27,9 +27,13 @@ TEST_SIZE = 0.2
 #FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "volatility_atr", "volatility_bbm","volatility_bbh","volatility_bbl","volatility_bbw","volatility_kch","volatility_kcl"]  #Accordingtovolatility
 #FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "macd","macddiff","momentum_stoch_rsi","momentum_stoch_rsi_d","momentum_stoch_rsi_k","stoch","RSI"]#Accordingtomomentum
 #FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "macd", "macddiff","RSI"]#AccordingtoTrend
-#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "volatility_atr", "macddiff","RSI", "WilliamR"]#Mixed
-FEATURE_COLUMNS = ["adjclose", "volume", "high","low", "WilliamR" ,"macd","macddiff","momentum_stoch_rsi","momentum_stoch_rsi_d","momentum_stoch_rsi_k","stoch","RSI"]#Accordingtomomentumwithwilliam
+#FEATURE_COLUMNS = ["adjclose", "volume", "open", "high","low", "volatility_atr", "macddiff","RSI", "WilliamR","volatility_bbw"]#Mixed
 
+#best upto now
+#FEATURE_COLUMNS = ["adjclose", "volume", "high","low", "WilliamR" ,"macddiff","momentum_stoch_rsi","stoch","RSI","volatility_atr","volatility_bbw"]#Accordingtomomentumwithwilliam  #BEST upto now
+#FEATURE_COLUMNS = ["adjclose", "volume", "IchiBaseLine","IchiConversionLine","IchiLineA","IchiLineB","EMA200","macddiff"]
+#FEATURE_COLUMNS = ["adjclose", "volume", "WilliamR" ,"macddiff","momentum_stoch_rsi","stoch","RSI","volatility_atr","volatility_bbw"]#new
+FEATURE_COLUMNS = ["adjclose"]
 
 # date now
 date_now = time.strftime("%Y-%m-%d")
@@ -55,13 +59,13 @@ BIDIRECTIONAL = True
 # huber loss
 LOSS = "huber_loss"
 OPTIMIZER = "adam"
-BATCH_SIZE = 50
-EPOCHS = 10 #Changed from prev 500 to 10
+BATCH_SIZE = 40 #32 imp number
+EPOCHS = 6 #Changed from prev 500 to 10
 
 # Amazon stock market
 #ticker = "AMZN"
-ticker = "NLICL"
-activationfunction=["linear","tanh","sigmoid","relu","elu","softmax","softplus","softsign","exponential",""]
+ticker = "NEPSE"
+activationfunction=["elu","linear","tanh","sigmoid","relu","softmax","softplus","softsign","exponential","sin"]
 
 
 

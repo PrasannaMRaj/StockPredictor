@@ -8,11 +8,11 @@ import matplotlib.dates as mdates
 
 style.use('ggplot')
 
-#start=dt.datetime(2000,1,1)
-#end=dt.datetime(2016,12,31)
+start=dt.datetime(1994,1,1)
+end=dt.datetime(2021,1,25)
 
-#df=web.DataReader('TSLA','yahoo',start,end)
-#df.to_csv('tsla.csv')
+df=web.DataReader('TSLA','yahoo',start,end)
+df.to_csv('tsla.csv')
 
 df=pd.read_csv('tsla.csv',parse_dates=True,index_col=0)
 #df['100ma']=df['Adj Close'].rolling(window=100, min_periods=0).mean()

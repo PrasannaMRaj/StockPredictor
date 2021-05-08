@@ -9,7 +9,7 @@ import csv
 import datetime
 import os
 
-ticker='NABIL'
+ticker='NEPSE1'
 def write_header():
         Head_data = open(f'{ticker}.csv', 'w', newline='')
         csvwriter = csv.writer(Head_data)
@@ -111,7 +111,8 @@ if os.path.isfile(f'{ticker}.csv'):
         print("Appending csv file")
 else:
         write_header()
-start_requests(ticker)
+
+#start_requests(ticker)
 converttodataframe()
 
 

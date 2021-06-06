@@ -5,7 +5,7 @@ from tensorflow.keras.layers import LSTM
 # Window size or the sequence length
 N_STEPS = 26 #128 imp number
 # Lookup step, 1 is the next day
-LOOKUP_STEP = 7 #changed from 15 to 5
+LOOKUP_STEP = 3 #changed from 15 to 5
 
 # whether to scale feature columns & output price as well
 SCALE = True
@@ -16,7 +16,7 @@ SHUFFLE = True
 shuffle_str = f"sh-{int(SHUFFLE)}"
 # whether to split the training/testing set by date
 #SPLIT_BY_DATE = False
-SPLIT_BY_DATE = True #changed from prev False
+SPLIT_BY_DATE = False #changed from prev False
 split_by_date_str = f"sbd-{int(SPLIT_BY_DATE)}"
 # test ratio size, 0.2 is 20%
 TEST_SIZE = 0.2

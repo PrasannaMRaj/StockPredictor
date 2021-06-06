@@ -358,3 +358,503 @@ Future price after 3 days is 1212.86
 huber_loss loss:0.001079976442269981
 Mean Absolute Error:418.5913165509701
 Accuracy score:0.532967032967033(MOST accurate graph till now)
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-24_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 7 days is 880.00
+output signal: HOLD
+huber_loss loss:0.014452533796429634
+Mean Absolute Error:306.3563669472933
+Accuracy score:0.5172413793103449
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-24_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 451.57
+output signal: BUY
+huber_loss loss:0.0007555324700661004
+Mean Absolute Error:184.84045977145433
+Accuracy score:0.4540540540540541
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-24_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1501.64
+output signal: HOLD
+huber_loss loss:0.0027731151785701513
+Mean Absolute Error:379.410188999027
+Accuracy score:0.5918367346938775
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-24_SPLIT_BY_DATE:False_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2805.39
+output signal: BUY
+huber_loss loss:0.00036481901770457625
+Mean Absolute Error:251.1798741713166
+Accuracy score:0.45374449339207046
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-27_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 449.34
+output signal: HOLD
+huber_loss loss:0.00125767826102674
+Mean Absolute Error:195.32155402153728
+Accuracy score:0.5405405405405406
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-27_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1424.09
+output signal: HOLD
+huber_loss loss:0.0010239151306450367
+Mean Absolute Error:369.595702778548
+Accuracy score:0.22448979591836735
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-27_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2494.27
+output signal: HOLD
+huber_loss loss:0.0017122654244303703
+Mean Absolute Error:323.9649321757704
+Accuracy score:0.23788546255506607
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-27_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 910.65
+output signal: HOLD
+huber_loss loss:0.0015812877099961042
+Mean Absolute Error:253.4405203863978
+Accuracy score:0.7288135593220338
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 421.54
+output signal: HOLD
+huber_loss loss:0.0012378166429698467
+Mean Absolute Error:186.63138182908295
+Accuracy score:0.372972972972973
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1339.00
+output signal: HOLD
+huber_loss loss:0.0026930791791528463
+Mean Absolute Error:388.02340901320173
+Accuracy score:0.34
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2381.21
+output signal: HOLD
+huber_loss loss:0.003353566862642765
+Mean Absolute Error:370.9579006019062
+Accuracy score:0.23348017621145375
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 822.72
+output signal: HOLD
+huber_loss loss:0.004848075099289417
+Mean Absolute Error:262.2930945252379
+Accuracy score:0.576271186440678
+
+N_STEPS: 26
+DDBL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1801.08
+output signal: HOLD
+huber_loss loss:0.0001183360000140965
+Mean Absolute Error:151.75185097722957
+Accuracy score:0.5028901734104047
+
+N_STEPS: 26
+CHCL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 652.82
+output signal: HOLD
+huber_loss loss:2.3507616788265295e-05
+Mean Absolute Error:358.5505044291882
+Accuracy score:0.4101694915254237
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 445.69
+output signal: HOLD
+huber_loss loss:0.0019052629359066486
+Mean Absolute Error:200.15887752299506
+Accuracy score:0.41081081081081083
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1466.53
+output signal: HOLD
+huber_loss loss:0.001903243362903595
+Mean Absolute Error:392.9677406554421
+Accuracy score:0.5
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2421.66
+output signal: HOLD
+huber_loss loss:0.004125311970710754
+Mean Absolute Error:394.3724325680435
+Accuracy score:0.31718061674008813
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 912.23
+output signal: HOLD
+huber_loss loss:0.004685007967054844
+Mean Absolute Error:281.01244632601737
+Accuracy score:0.5932203389830508
+
+N_STEPS: 26
+DDBL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1834.54
+output signal: HOLD
+huber_loss loss:0.0002923250722233206
+Mean Absolute Error:168.47327185024818
+Accuracy score:0.47109826589595377
+
+N_STEPS: 26
+CHCL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 729.69
+output signal: BUY
+huber_loss loss:2.672610389709007e-05
+Mean Absolute Error:371.9994881105299
+Accuracy score:0.5338983050847458
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 5.57
+output signal: HOLD
+huber_loss loss:0.009434458799660206
+Mean Absolute Error:3.2450496428459936
+Accuracy score:0.5621621621621622
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 7.61
+output signal: HOLD
+huber_loss loss:0.0011683017946779728
+Mean Absolute Error:3.5955717360363684
+Accuracy score:0.66
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2.49
+output signal: HOLD
+huber_loss loss:0.00444885715842247
+Mean Absolute Error:0.7203118960940196
+Accuracy score:0.5110132158590308
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 10.55
+output signal: HOLD
+huber_loss loss:0.014352037571370602
+Mean Absolute Error:4.92465793273557
+Accuracy score:0.4745762711864407
+
+N_STEPS: 26
+DDBL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 5.15
+output signal: HOLD
+huber_loss loss:0.004165250808000565
+Mean Absolute Error:1.0352788350640478
+Accuracy score:0.5346820809248555
+
+N_STEPS: 26
+CHCL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 14.12
+output signal: HOLD
+huber_loss loss:0.0036853926721960306
+Mean Absolute Error:1.3005025035859354
+Accuracy score:0.5372881355932203
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 435.98
+output signal: HOLD
+huber_loss loss:0.00020764852524735034
+Mean Absolute Error:187.91087143607436
+Accuracy score:0.7297297297297297
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1387.43
+output signal: HOLD
+huber_loss loss:0.0021903226152062416
+Mean Absolute Error:392.7638286277652
+Accuracy score:0.36
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2423.51
+output signal: HOLD
+huber_loss loss:0.002532820450142026
+Mean Absolute Error:344.2664195649382
+Accuracy score:0.2511013215859031
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 870.61
+output signal: HOLD
+huber_loss loss:0.002324360655620694
+Mean Absolute Error:262.82397827859967
+Accuracy score:0.5254237288135594
+
+N_STEPS: 26
+DDBL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1817.43
+output signal: HOLD
+huber_loss loss:3.7584435631288216e-05
+Mean Absolute Error:186.98369971076025
+Accuracy score:0.653179190751445
+
+N_STEPS: 26
+CHCL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 668.65
+output signal: HOLD
+huber_loss loss:7.117013410606887e-06
+Mean Absolute Error:362.21679251847087
+Accuracy score:0.7033898305084746
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 415.33
+output signal: HOLD
+huber_loss loss:0.001123989000916481
+Mean Absolute Error:171.9991355005143
+Accuracy score:0.5513513513513514
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1393.22
+output signal: HOLD
+huber_loss loss:0.0010918595362454653
+Mean Absolute Error:248.89175720019534
+Accuracy score:0.76
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2286.32
+output signal: HOLD
+huber_loss loss:0.0026226365007460117
+Mean Absolute Error:327.6138971413312
+Accuracy score:0.4052863436123348
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 770.26
+output signal: HOLD
+huber_loss loss:0.004385444801300764
+Mean Absolute Error:245.049398154651
+Accuracy score:0.6440677966101694
+
+N_STEPS: 26
+DDBL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1756.69
+output signal: HOLD
+huber_loss loss:0.0001619733084226027
+Mean Absolute Error:137.47598501395004
+Accuracy score:0.5982658959537572
+
+N_STEPS: 26
+CHCL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 574.86
+output signal: SELL
+huber_loss loss:4.4271040678722784e-05
+Mean Absolute Error:314.1753646709553
+Accuracy score:0.5779661016949152
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 446.57
+output signal: HOLD
+huber_loss loss:0.00291708717122674
+Mean Absolute Error:205.37926749824354
+Accuracy score:0.5135135135135135
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1507.62
+output signal: HOLD
+huber_loss loss:0.0007316444534808397
+Mean Absolute Error:376.15078706510167
+Accuracy score:0.5
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2563.37
+output signal: HOLD
+huber_loss loss:0.0029028381686657667
+Mean Absolute Error:368.0571025731325
+Accuracy score:0.36123348017621143
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 950.85
+output signal: HOLD
+huber_loss loss:0.0062045990489423275
+Mean Absolute Error:302.17878363568525
+Accuracy score:0.4915254237288136
+
+N_STEPS: 26
+DDBL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1906.08
+output signal: HOLD
+huber_loss loss:0.00033358874497935176
+Mean Absolute Error:284.10906559214845
+Accuracy score:0.5202312138728323
+
+N_STEPS: 26
+CHCL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 769.33
+output signal: BUY
+huber_loss loss:4.084583270014264e-05
+Mean Absolute Error:379.9511958235769
+Accuracy score:0.5305084745762711
+
+N_STEPS: 26
+PRVU_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 434.17
+output signal: HOLD
+huber_loss loss:0.0020303833298385143
+Mean Absolute Error:195.91574055701494
+Accuracy score:0.34054054054054056
+
+N_STEPS: 26
+SHIVM_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1407.39
+output signal: HOLD
+huber_loss loss:0.002196170622482896
+Mean Absolute Error:389.79352848231787
+Accuracy score:0.32
+
+N_STEPS: 26
+NEPSE_index_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 2386.46
+output signal: HOLD
+huber_loss loss:0.00406213104724884
+Mean Absolute Error:392.5809840012886
+Accuracy score:0.27312775330396477
+
+N_STEPS: 26
+UPPER_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 904.27
+output signal: HOLD
+huber_loss loss:0.004964453633874655
+Mean Absolute Error:277.1214381828904
+Accuracy score:0.4576271186440678
+
+N_STEPS: 26
+DDBL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 1864.27
+output signal: HOLD
+huber_loss loss:0.0001928371930262074
+Mean Absolute Error:187.68709588143975
+Accuracy score:0.4161849710982659
+
+N_STEPS: 26
+CHCL_EPOCH:6_date_now:2021-05-28_SPLIT_BY_DATE:True_SHUFFLE:True_DROPOUT:0.2_activation:elu_N_LAYERS:3_BATCH_SIZE:40 
+Features : ['volatility_bbm', 'volatility_bbl', 'volatility_bbh', 'volatility_kch', 'volatility_kcl', 'volatility_kcw', 'ichibaseline', 'ichiconversionline', 'adjclose'] 
+Model Type: StackedLSTM_Bi 
+Future price after 3 days is 709.01
+output signal: BUY
+huber_loss loss:4.15638460253831e-05
+Mean Absolute Error:368.647406227421
+Accuracy score:0.3016949152542373

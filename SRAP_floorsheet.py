@@ -25,7 +25,7 @@ def start_requests(ticker):
         print("fromdate: ",Fromdate_origin)
         print("TO date: ", Todate_origin)
 
-        url = "https://newweb.nepalstock.com/api/nots/nepse-data/floorsheet?&size=1000000&sort=contractId,desc"
+        url = "https://newweb.nepalstock.com/api/nots/nepse-data/floorsheet?&size=500&sort=contractId,desc"
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36'}
 
         page=requests.get(url,headers=headers)
@@ -74,11 +74,11 @@ def broker_analysis():
         plt.show()
 
 
+
+
+start_requests(ticker)
+
 broker_analysis()
-
-#start_requests(ticker)
-
-
 
 
 

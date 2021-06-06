@@ -5,7 +5,7 @@ from test import *
 #tickersloop=["NEPSE","BANKING","NLIC","LICN","SBL","GBIME","LIFEINSU","NMB","SHIVM","NICA","NABIL"]
 #tickersloop=["NICA","NMB","NEPSE","BANKING","GBIME","UPPER","ADBL","SHIVM"]
 #tickersloop=["NICA","NMB","NEPSE_index","Banking_index","UPPER","NABIL","SHIVM"] #My stocks
-tickersloop=["NICA"]
+tickersloop=["PRVU","SHIVM","NEPSE_index"]
 #trainingfunction(tickersloop[0])
 
 for tickers in tickersloop:

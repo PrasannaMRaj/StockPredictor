@@ -1,0 +1,501 @@
+,id,contractId,contractType,stockSymbol,buyerMemberId,sellerMemberId,contractQuantity,contractRate,contractAmount,businessDate,tradeBookId,stockId,buyerBrokerName,sellerBrokerName,tradeTime,securityName
+0,,2021053105001360,,KLBSL,37,16,80,1655.0,132400.0,2021-05-31,30215699,694,Swarna Laxmi Securities Pvt. Ltd.,Primo Securities (PVT) Ltd.,2021-05-31T14:59:59.679583,Kisan Lagubitta Bittiya Sanstha Limited
+1,,2021053105001359,,SHL,58,38,100,240.0,24000.0,2021-05-31,30214551,147,Naasa Securities Co. Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T14:59:41.165067,Soaltee Hotel Limited
+2,,2021053105001358,,KLBSL,7,7,50,1656.0,82800.0,2021-05-31,30213796,694,J.F. Securites (PVT) Ltd.,J.F. Securites (PVT) Ltd.,2021-05-31T14:59:30.475507,Kisan Lagubitta Bittiya Sanstha Limited
+3,,2021053105001357,,SHL,43,38,161,240.0,38640.0,2021-05-31,30212646,147,South Asian Bulls Pvt. Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T14:59:12.062916,Soaltee Hotel Limited
+4,,2021053105001356,,SHL,43,38,189,240.0,45360.0,2021-05-31,30212637,147,South Asian Bulls Pvt. Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T14:59:12.062148,Soaltee Hotel Limited
+5,,2021053105001355,,SHL,56,38,121,240.0,29040.0,2021-05-31,30212217,147,Sri Hari Securities Pvt. Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T14:59:05.380709,Soaltee Hotel Limited
+6,,2021053105001354,,SHL,56,25,100,240.0,24000.0,2021-05-31,30212210,147,Sri Hari Securities Pvt. Ltd.,Sweta Securities Private Limited,2021-05-31T14:59:05.380053,Soaltee Hotel Limited
+7,,2021053105001353,,SHL,56,42,200,240.0,48000.0,2021-05-31,30212198,147,Sri Hari Securities Pvt. Ltd.,Sani Securities Company Ltd.,2021-05-31T14:59:05.379409,Soaltee Hotel Limited
+8,,2021053105001352,,SHL,56,43,141,240.0,33840.0,2021-05-31,30212188,147,Sri Hari Securities Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T14:59:05.378582,Soaltee Hotel Limited
+9,,2021053105001351,,SHL,21,43,100,240.0,24000.0,2021-05-31,30212181,147,Midas Stock Broking Company Private Limited,South Asian Bulls Pvt. Ltd.,2021-05-31T14:59:05.347011,Soaltee Hotel Limited
+10,,2021053105001350,,SHL,42,43,200,240.0,48000.0,2021-05-31,30212026,147,Sani Securities Company Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T14:59:03.250428,Soaltee Hotel Limited
+11,,2021053105001349,,SHL,49,43,100,240.0,24000.0,2021-05-31,30211633,147,Online Securities Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T14:58:54.551118,Soaltee Hotel Limited
+12,,2021053105001348,,SHL,34,43,150,240.0,36000.0,2021-05-31,30210952,147,Vision Securities Pvt. Ltd,South Asian Bulls Pvt. Ltd.,2021-05-31T14:58:40.860497,Soaltee Hotel Limited
+13,,2021053105001347,,SHL,34,33,250,240.0,60000.0,2021-05-31,30210947,147,Vision Securities Pvt. Ltd,Dakshinkali Investment & Securities Pvt. Ltd.,2021-05-31T14:58:40.859903,Soaltee Hotel Limited
+14,,2021053105001346,,SHL,34,48,600,240.0,144000.0,2021-05-31,30210942,147,Vision Securities Pvt. Ltd,Trishakti Securities Public Limited,2021-05-31T14:58:40.85911,Soaltee Hotel Limited
+15,,2021053105001345,,SHL,5,48,200,240.0,48000.0,2021-05-31,30209607,147,Market Securities & Exchange (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T14:58:14.251988,Soaltee Hotel Limited
+16,,2021053105001344,,KLBSL,34,52,11,1667.0,18337.0,2021-05-31,30209203,694,Vision Securities Pvt. Ltd,Sundhara Securities Limited,2021-05-31T14:58:01.022584,Kisan Lagubitta Bittiya Sanstha Limited
+17,,2021053105001343,,SHL,49,48,20,240.0,4800.0,2021-05-31,30208993,147,Online Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:57:59.687491,Soaltee Hotel Limited
+18,,2021053105001342,,SHL,52,48,100,240.0,24000.0,2021-05-31,30208991,147,Sundhara Securities Limited,Trishakti Securities Public Limited,2021-05-31T14:57:59.686959,Soaltee Hotel Limited
+19,,2021053105001341,,SHL,57,48,100,240.0,24000.0,2021-05-31,30208620,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T14:57:54.258397,Soaltee Hotel Limited
+20,,2021053105001340,,SHL,41,48,100,240.0,24000.0,2021-05-31,30208865,147,Linch Stock Market Ltd.,Trishakti Securities Public Limited,2021-05-31T14:57:52.54196,Soaltee Hotel Limited
+21,,2021053105001339,,SHL,6,48,100,240.0,24000.0,2021-05-31,30208274,147,Agrawal Securities (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T14:57:45.111561,Soaltee Hotel Limited
+22,,2021053105001338,,SHL,58,48,130,240.0,31200.0,2021-05-31,30208481,147,Naasa Securities Co. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:57:39.973405,Soaltee Hotel Limited
+23,,2021053105001337,,SHL,42,48,250,240.0,60000.0,2021-05-31,30207998,147,Sani Securities Company Ltd.,Trishakti Securities Public Limited,2021-05-31T14:57:30.122298,Soaltee Hotel Limited
+24,,2021053105001336,,SHL,49,25,200,240.0,48000.0,2021-05-31,30207824,147,Online Securities Pvt. Ltd.,Sweta Securities Private Limited,2021-05-31T14:57:28.617143,Soaltee Hotel Limited
+25,,2021053105001335,,SHL,43,21,150,239.0,35850.0,2021-05-31,30207306,147,South Asian Bulls Pvt. Ltd.,Midas Stock Broking Company Private Limited,2021-05-31T14:57:17.314714,Soaltee Hotel Limited
+26,,2021053105001334,,SHL,57,21,100,239.0,23900.0,2021-05-31,30207303,147,Aryatara Investment & Securities,Midas Stock Broking Company Private Limited,2021-05-31T14:57:17.313865,Soaltee Hotel Limited
+27,,2021053105001333,,SHL,6,25,200,240.0,48000.0,2021-05-31,30205969,147,Agrawal Securities (PVT) Ltd.,Sweta Securities Private Limited,2021-05-31T14:56:43.138799,Soaltee Hotel Limited
+28,,2021053105001332,,KLBSL,37,57,10,1653.0,16530.0,2021-05-31,30205850,694,Swarna Laxmi Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:56:42.326928,Kisan Lagubitta Bittiya Sanstha Limited
+29,,2021053105001331,,SHL,22,25,200,240.0,48000.0,2021-05-31,30205006,147,Siprabi Securities Pvt. Ltd.,Sweta Securities Private Limited,2021-05-31T14:56:16.639582,Soaltee Hotel Limited
+30,,2021053105001330,,SHL,50,34,100,239.0,23900.0,2021-05-31,30204854,147,Cristal Kanchanjanga Securites Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:56:16.036498,Soaltee Hotel Limited
+31,,2021053105001329,,KLBSL,37,57,90,1653.0,148770.0,2021-05-31,30204616,694,Swarna Laxmi Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:56:13.887856,Kisan Lagubitta Bittiya Sanstha Limited
+32,,2021053105001328,,SHL,49,43,740,239.0,176860.0,2021-05-31,30204664,147,Online Securities Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T14:56:10.664702,Soaltee Hotel Limited
+33,,2021053105001327,,SHL,49,8,260,239.0,62140.0,2021-05-31,30204649,147,Online Securities Pvt. Ltd.,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:56:10.664016,Soaltee Hotel Limited
+34,,2021053105001326,,SHL,22,8,200,239.0,47800.0,2021-05-31,30204471,147,Siprabi Securities Pvt. Ltd.,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:56:06.148328,Soaltee Hotel Limited
+35,,2021053105001325,,SHL,28,8,140,239.0,33460.0,2021-05-31,30203416,147,Shree Krishna Securities Ltd.,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:55:40.897201,Soaltee Hotel Limited
+36,,2021053105001324,,SHL,58,8,100,239.0,23900.0,2021-05-31,30203403,147,Naasa Securities Co. Ltd.,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:55:40.896724,Soaltee Hotel Limited
+37,,2021053105001323,,SHL,38,8,300,239.0,71700.0,2021-05-31,30203392,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:55:40.896044,Soaltee Hotel Limited
+38,,2021053105001322,,SHL,38,34,100,239.0,23900.0,2021-05-31,30203711,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:55:39.876801,Soaltee Hotel Limited
+39,,2021053105001321,,SHL,14,34,100,239.0,23900.0,2021-05-31,30203689,147,Nepal Stock House (PVT) Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:55:39.876121,Soaltee Hotel Limited
+40,,2021053105001320,,SHL,45,50,270,239.0,64530.0,2021-05-31,30202855,147,Imperial Securities Company Pvt. Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:55:20.185276,Soaltee Hotel Limited
+41,,2021053105001319,,SHL,45,3,180,239.0,43020.0,2021-05-31,30200536,147,Imperial Securities Company Pvt. Ltd.,Arun Securities (PVT) Ltd.,2021-05-31T14:54:14.546481,Soaltee Hotel Limited
+42,,2021053105001318,,KLBSL,37,42,10,1653.0,16530.0,2021-05-31,30200805,694,Swarna Laxmi Securities Pvt. Ltd.,Sani Securities Company Ltd.,2021-05-31T14:54:07.898237,Kisan Lagubitta Bittiya Sanstha Limited
+43,,2021053105001317,,SHL,45,34,550,239.0,131450.0,2021-05-31,30200017,147,Imperial Securities Company Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:53:52.02281,Soaltee Hotel Limited
+44,,2021053105001316,,SHL,43,34,250,239.0,59750.0,2021-05-31,30200010,147,South Asian Bulls Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:53:52.022149,Soaltee Hotel Limited
+45,,2021053105001315,,SHL,57,25,200,240.0,48000.0,2021-05-31,30200067,147,Aryatara Investment & Securities,Sweta Securities Private Limited,2021-05-31T14:53:36.846609,Soaltee Hotel Limited
+46,,2021053105001314,,SHL,56,25,100,240.0,24000.0,2021-05-31,30199789,147,Sri Hari Securities Pvt. Ltd.,Sweta Securities Private Limited,2021-05-31T14:53:31.613226,Soaltee Hotel Limited
+47,,2021053105001313,,SHL,43,35,100,239.0,23900.0,2021-05-31,30199643,147,South Asian Bulls Pvt. Ltd.,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T14:53:27.711713,Soaltee Hotel Limited
+48,,2021053105001312,,SHL,41,25,100,240.0,24000.0,2021-05-31,30198887,147,Linch Stock Market Ltd.,Sweta Securities Private Limited,2021-05-31T14:53:06.012524,Soaltee Hotel Limited
+49,,2021053105001311,,KLBSL,54,42,31,1651.0,51181.0,2021-05-31,30198839,694,Sewa Securities Pvt. Ltd.,Sani Securities Company Ltd.,2021-05-31T14:53:03.107799,Kisan Lagubitta Bittiya Sanstha Limited
+50,,2021053105001310,,SHL,20,39,100,239.0,23900.0,2021-05-31,30198700,147,Sipla Securities Private Limited,Sumeru Securities Pvt. Ltd.,2021-05-31T14:53:00.502993,Soaltee Hotel Limited
+51,,2021053105001309,,SHL,19,39,300,239.0,71700.0,2021-05-31,30198696,147,Nepal Investment And Securities Trading Private Limited,Sumeru Securities Pvt. Ltd.,2021-05-31T14:53:00.502493,Soaltee Hotel Limited
+52,,2021053105001308,,SHL,1,39,600,239.0,143400.0,2021-05-31,30198688,147,Kumari Securities Private Limited,Sumeru Securities Pvt. Ltd.,2021-05-31T14:53:00.501825,Soaltee Hotel Limited
+53,,2021053105001307,,SHL,5,38,100,240.0,24000.0,2021-05-31,30198632,147,Market Securities & Exchange (PVT) Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T14:52:59.704263,Soaltee Hotel Limited
+54,,2021053105001306,,SHL,34,28,100,240.0,24000.0,2021-05-31,30198674,147,Vision Securities Pvt. Ltd,Shree Krishna Securities Ltd.,2021-05-31T14:52:53.630143,Soaltee Hotel Limited
+55,,2021053105001305,,SHL,1,25,500,239.0,119500.0,2021-05-31,30198405,147,Kumari Securities Private Limited,Sweta Securities Private Limited,2021-05-31T14:52:41.6638,Soaltee Hotel Limited
+56,,2021053105001304,,SHL,45,28,837,240.0,200880.0,2021-05-31,30197917,147,Imperial Securities Company Pvt. Ltd.,Shree Krishna Securities Ltd.,2021-05-31T14:52:32.110747,Soaltee Hotel Limited
+57,,2021053105001303,,SHL,45,57,163,240.0,39120.0,2021-05-31,30197862,147,Imperial Securities Company Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:52:32.110064,Soaltee Hotel Limited
+58,,2021053105001302,,SHL,1,17,100,239.0,23900.0,2021-05-31,30197879,147,Kumari Securities Private Limited,ABC Securities Private Limited,2021-05-31T14:52:30.530474,Soaltee Hotel Limited
+59,,2021053105001301,,SHL,1,14,300,239.0,71700.0,2021-05-31,30197924,147,Kumari Securities Private Limited,Nepal Stock House (PVT) Ltd.,2021-05-31T14:52:27.806268,Soaltee Hotel Limited
+60,,2021053105001300,,SHL,1,17,100,239.0,23900.0,2021-05-31,30195319,147,Kumari Securities Private Limited,ABC Securities Private Limited,2021-05-31T14:51:25.452694,Soaltee Hotel Limited
+61,,2021053105001299,,SHL,14,57,100,240.0,24000.0,2021-05-31,30194498,147,Nepal Stock House (PVT) Ltd.,Aryatara Investment & Securities,2021-05-31T14:51:02.28803,Soaltee Hotel Limited
+62,,2021053105001298,,SHL,20,57,100,240.0,24000.0,2021-05-31,30194206,147,Sipla Securities Private Limited,Aryatara Investment & Securities,2021-05-31T14:50:50.713525,Soaltee Hotel Limited
+63,,2021053105001297,,SHL,11,57,330,240.0,79200.0,2021-05-31,30194194,147,Malla & Malla Stock Broking Company Pvt. Limited,Aryatara Investment & Securities,2021-05-31T14:50:46.972104,Soaltee Hotel Limited
+64,,2021053105001296,,SHL,1,45,400,239.0,95600.0,2021-05-31,30193303,147,Kumari Securities Private Limited,Imperial Securities Company Pvt. Ltd.,2021-05-31T14:50:34.746692,Soaltee Hotel Limited
+65,,2021053105001295,,SHL,35,57,500,240.0,120000.0,2021-05-31,30193020,147,Kohinoor Investment & Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:50:26.001572,Soaltee Hotel Limited
+66,,2021053105001294,,SHL,49,57,100,240.0,24000.0,2021-05-31,30191488,147,Online Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:49:35.156009,Soaltee Hotel Limited
+67,,2021053105001293,,SHL,51,57,100,240.0,24000.0,2021-05-31,30190951,147,Oxford Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:49:24.955907,Soaltee Hotel Limited
+68,,2021053105001292,,SHL,1,57,100,240.0,24000.0,2021-05-31,30191179,147,Kumari Securities Private Limited,Aryatara Investment & Securities,2021-05-31T14:49:21.936161,Soaltee Hotel Limited
+69,,2021053105001291,,SHL,1,57,200,240.0,48000.0,2021-05-31,30189952,147,Kumari Securities Private Limited,Aryatara Investment & Securities,2021-05-31T14:49:01.569432,Soaltee Hotel Limited
+70,,2021053105001290,,SHL,11,45,100,239.0,23900.0,2021-05-31,30190311,147,Malla & Malla Stock Broking Company Pvt. Limited,Imperial Securities Company Pvt. Ltd.,2021-05-31T14:49:00.702181,Soaltee Hotel Limited
+71,,2021053105001289,,SHL,3,45,200,239.0,47800.0,2021-05-31,30190397,147,Arun Securities (PVT) Ltd.,Imperial Securities Company Pvt. Ltd.,2021-05-31T14:49:00.702073,Soaltee Hotel Limited
+72,,2021053105001288,,SHL,1,45,100,239.0,23900.0,2021-05-31,30190376,147,Kumari Securities Private Limited,Imperial Securities Company Pvt. Ltd.,2021-05-31T14:49:00.701863,Soaltee Hotel Limited
+73,,2021053105001287,,SHL,45,57,1000,240.0,240000.0,2021-05-31,30188337,147,Imperial Securities Company Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:48:02.735059,Soaltee Hotel Limited
+74,,2021053105001286,,SHL,46,57,207,240.0,49680.0,2021-05-31,30187805,147,Kalika Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:47:50.555166,Soaltee Hotel Limited
+75,,2021053105001285,,SHL,38,57,500,240.0,120000.0,2021-05-31,30187510,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Aryatara Investment & Securities,2021-05-31T14:47:48.960552,Soaltee Hotel Limited
+76,,2021053105001284,,SHL,57,57,100,240.0,24000.0,2021-05-31,30187441,147,Aryatara Investment & Securities,Aryatara Investment & Securities,2021-05-31T14:47:31.293605,Soaltee Hotel Limited
+77,,2021053105001283,,SHL,4,57,100,240.0,24000.0,2021-05-31,30187693,147,Opal Securities Investment (PVT) Ltd.,Aryatara Investment & Securities,2021-05-31T14:47:29.257697,Soaltee Hotel Limited
+78,,2021053105001282,,SHL,56,57,400,240.0,96000.0,2021-05-31,30187411,147,Sri Hari Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:47:27.174197,Soaltee Hotel Limited
+79,,2021053105001281,,SHL,56,8,100,240.0,24000.0,2021-05-31,30186970,147,Sri Hari Securities Pvt. Ltd.,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:47:22.750135,Soaltee Hotel Limited
+80,,2021053105001280,,SHL,48,58,200,241.0,48200.0,2021-05-31,30185909,147,Trishakti Securities Public Limited,Naasa Securities Co. Ltd.,2021-05-31T14:46:55.553003,Soaltee Hotel Limited
+81,,2021053105001279,,SHL,4,58,150,241.0,36150.0,2021-05-31,30186064,147,Opal Securities Investment (PVT) Ltd.,Naasa Securities Co. Ltd.,2021-05-31T14:46:48.651376,Soaltee Hotel Limited
+82,,2021053105001278,,SHL,4,54,100,241.0,24100.0,2021-05-31,30186018,147,Opal Securities Investment (PVT) Ltd.,Sewa Securities Pvt. Ltd.,2021-05-31T14:46:48.650629,Soaltee Hotel Limited
+83,,2021053105001277,,SHL,29,54,100,241.0,24100.0,2021-05-31,30185429,147,Trisul Securities & Invt. Ltd.,Sewa Securities Pvt. Ltd.,2021-05-31T14:46:30.052902,Soaltee Hotel Limited
+84,,2021053105001276,,SHL,54,57,100,241.0,24100.0,2021-05-31,30184740,147,Sewa Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:46:06.643375,Soaltee Hotel Limited
+85,,2021053105001275,,SHL,34,50,100,240.0,24000.0,2021-05-31,30184637,147,Vision Securities Pvt. Ltd,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:45:41.325477,Soaltee Hotel Limited
+86,,2021053105001274,,KLBSL,5,52,10,1653.0,16530.0,2021-05-31,30183114,694,Market Securities & Exchange (PVT) Ltd.,Sundhara Securities Limited,2021-05-31T14:45:03.447331,Kisan Lagubitta Bittiya Sanstha Limited
+87,,2021053105001273,,SHL,36,10,100,240.0,24000.0,2021-05-31,30183161,147,Secured Securities Ltd.,Pragyan Securities (PVT) Ltd.,2021-05-31T14:44:54.734885,Soaltee Hotel Limited
+88,,2021053105001272,,SHL,14,50,105,240.0,25200.0,2021-05-31,30182176,147,Nepal Stock House (PVT) Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:44:46.606009,Soaltee Hotel Limited
+89,,2021053105001271,,SHL,44,50,100,240.0,24000.0,2021-05-31,30182166,147,Dynamic Money Managers Securities Pvt. Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:44:46.605491,Soaltee Hotel Limited
+90,,2021053105001270,,SHL,38,50,400,240.0,96000.0,2021-05-31,30182102,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:44:46.604717,Soaltee Hotel Limited
+91,,2021053105001269,,SHL,38,8,100,240.0,24000.0,2021-05-31,30182424,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:44:39.711919,Soaltee Hotel Limited
+92,,2021053105001268,,SHL,55,57,100,241.0,24100.0,2021-05-31,30182274,147,Bhrikuti Stock Broking Co. Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:44:33.291469,Soaltee Hotel Limited
+93,,2021053105001267,,SHL,48,26,200,240.0,48000.0,2021-05-31,30181195,147,Trishakti Securities Public Limited,Asian Securities Private Ltd.,2021-05-31T14:43:52.979069,Soaltee Hotel Limited
+94,,2021053105001266,,SHL,42,26,100,240.0,24000.0,2021-05-31,30181191,147,Sani Securities Company Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.978544,Soaltee Hotel Limited
+95,,2021053105001265,,SHL,55,26,100,240.0,24000.0,2021-05-31,30181187,147,Bhrikuti Stock Broking Co. Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.978018,Soaltee Hotel Limited
+96,,2021053105001264,,SHL,34,26,100,240.0,24000.0,2021-05-31,30181183,147,Vision Securities Pvt. Ltd,Asian Securities Private Ltd.,2021-05-31T14:43:52.977499,Soaltee Hotel Limited
+97,,2021053105001263,,SHL,45,26,200,240.0,48000.0,2021-05-31,30181179,147,Imperial Securities Company Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.97701,Soaltee Hotel Limited
+98,,2021053105001262,,SHL,21,26,100,240.0,24000.0,2021-05-31,30181175,147,Midas Stock Broking Company Private Limited,Asian Securities Private Ltd.,2021-05-31T14:43:52.97646,Soaltee Hotel Limited
+99,,2021053105001261,,SHL,42,26,200,240.0,48000.0,2021-05-31,30181168,147,Sani Securities Company Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.975937,Soaltee Hotel Limited
+100,,2021053105001260,,SHL,14,26,100,240.0,24000.0,2021-05-31,30181062,147,Nepal Stock House (PVT) Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.975397,Soaltee Hotel Limited
+101,,2021053105001259,,SHL,6,26,500,240.0,120000.0,2021-05-31,30181058,147,Agrawal Securities (PVT) Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.974872,Soaltee Hotel Limited
+102,,2021053105001258,,SHL,14,26,100,240.0,24000.0,2021-05-31,30181050,147,Nepal Stock House (PVT) Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.974273,Soaltee Hotel Limited
+103,,2021053105001257,,SHL,28,26,135,240.0,32400.0,2021-05-31,30181044,147,Shree Krishna Securities Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.973734,Soaltee Hotel Limited
+104,,2021053105001256,,SHL,17,26,533,240.0,127920.0,2021-05-31,30181032,147,ABC Securities Private Limited,Asian Securities Private Ltd.,2021-05-31T14:43:52.97319,Soaltee Hotel Limited
+105,,2021053105001255,,SHL,47,26,100,240.0,24000.0,2021-05-31,30181020,147,Neev Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.97267,Soaltee Hotel Limited
+106,,2021053105001254,,SHL,6,26,100,240.0,24000.0,2021-05-31,30181015,147,Agrawal Securities (PVT) Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.972114,Soaltee Hotel Limited
+107,,2021053105001253,,SHL,59,26,200,240.0,48000.0,2021-05-31,30181009,147,Deevyaa Securities & Stock House Pvt. Ltd,Asian Securities Private Ltd.,2021-05-31T14:43:52.971566,Soaltee Hotel Limited
+108,,2021053105001252,,SHL,52,26,100,240.0,24000.0,2021-05-31,30181104,147,Sundhara Securities Limited,Asian Securities Private Ltd.,2021-05-31T14:43:52.971048,Soaltee Hotel Limited
+109,,2021053105001251,,SHL,42,26,500,240.0,120000.0,2021-05-31,30181098,147,Sani Securities Company Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.970476,Soaltee Hotel Limited
+110,,2021053105001250,,SHL,52,26,300,240.0,72000.0,2021-05-31,30181092,147,Sundhara Securities Limited,Asian Securities Private Ltd.,2021-05-31T14:43:52.969918,Soaltee Hotel Limited
+111,,2021053105001249,,SHL,48,26,200,240.0,48000.0,2021-05-31,30181084,147,Trishakti Securities Public Limited,Asian Securities Private Ltd.,2021-05-31T14:43:52.969333,Soaltee Hotel Limited
+112,,2021053105001248,,SHL,1,26,100,240.0,24000.0,2021-05-31,30181080,147,Kumari Securities Private Limited,Asian Securities Private Ltd.,2021-05-31T14:43:52.968788,Soaltee Hotel Limited
+113,,2021053105001247,,SHL,51,26,100,240.0,24000.0,2021-05-31,30181074,147,Oxford Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.968141,Soaltee Hotel Limited
+114,,2021053105001246,,SHL,47,26,350,240.0,84000.0,2021-05-31,30181067,147,Neev Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T14:43:52.967318,Soaltee Hotel Limited
+115,,2021053105001245,,SHL,29,48,100,241.0,24100.0,2021-05-31,30180187,147,Trisul Securities & Invt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:43:13.190872,Soaltee Hotel Limited
+116,,2021053105001244,,KLBSL,20,52,82,1654.0,135628.0,2021-05-31,30179394,694,Sipla Securities Private Limited,Sundhara Securities Limited,2021-05-31T14:42:43.580753,Kisan Lagubitta Bittiya Sanstha Limited
+117,,2021053105001243,,KLBSL,20,38,10,1653.0,16530.0,2021-05-31,30178795,694,Sipla Securities Private Limited,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T14:42:37.472557,Kisan Lagubitta Bittiya Sanstha Limited
+118,,2021053105001242,,SHL,56,48,500,241.0,120500.0,2021-05-31,30178702,147,Sri Hari Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:42:32.12814,Soaltee Hotel Limited
+119,,2021053105001241,,SHL,48,51,103,241.0,24823.0,2021-05-31,30178523,147,Trishakti Securities Public Limited,Oxford Securities Pvt. Ltd.,2021-05-31T14:42:30.648069,Soaltee Hotel Limited
+120,,2021053105001240,,SHL,47,51,200,241.0,48200.0,2021-05-31,30176093,147,Neev Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:41:07.253112,Soaltee Hotel Limited
+121,,2021053105001239,,KLBSL,5,57,10,1653.0,16530.0,2021-05-31,30175801,694,Market Securities & Exchange (PVT) Ltd.,Aryatara Investment & Securities,2021-05-31T14:40:44.148422,Kisan Lagubitta Bittiya Sanstha Limited
+122,,2021053105001238,,SHL,26,51,500,241.0,120500.0,2021-05-31,30175086,147,Asian Securities Private Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:40:31.112172,Soaltee Hotel Limited
+123,,2021053105001237,,SHL,47,48,150,240.0,36000.0,2021-05-31,30174417,147,Neev Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:40:10.97997,Soaltee Hotel Limited
+124,,2021053105001236,,SHL,51,48,100,240.0,24000.0,2021-05-31,30174413,147,Oxford Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:40:10.979367,Soaltee Hotel Limited
+125,,2021053105001235,,SHL,59,48,300,240.0,72000.0,2021-05-31,30174382,147,Deevyaa Securities & Stock House Pvt. Ltd,Trishakti Securities Public Limited,2021-05-31T14:40:10.978608,Soaltee Hotel Limited
+126,,2021053105001234,,SHL,49,51,200,241.0,48200.0,2021-05-31,30174035,147,Online Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:39:51.140681,Soaltee Hotel Limited
+127,,2021053105001233,,SHL,58,51,180,241.0,43380.0,2021-05-31,30174408,147,Naasa Securities Co. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:39:28.100968,Soaltee Hotel Limited
+128,,2021053105001232,,SHL,28,51,500,241.0,120500.0,2021-05-31,30173056,147,Shree Krishna Securities Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:39:21.750472,Soaltee Hotel Limited
+129,,2021053105001231,,SHL,59,25,300,240.0,72000.0,2021-05-31,30173261,147,Deevyaa Securities & Stock House Pvt. Ltd,Sweta Securities Private Limited,2021-05-31T14:39:11.42386,Soaltee Hotel Limited
+130,,2021053105001230,,SHL,59,58,100,240.0,24000.0,2021-05-31,30172711,147,Deevyaa Securities & Stock House Pvt. Ltd,Naasa Securities Co. Ltd.,2021-05-31T14:38:57.809237,Soaltee Hotel Limited
+131,,2021053105001229,,KLBSL,53,57,10,1655.0,16550.0,2021-05-31,30171769,694,Investment Management Nepal Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:38:22.565579,Kisan Lagubitta Bittiya Sanstha Limited
+132,,2021053105001228,,SHL,59,8,100,240.0,24000.0,2021-05-31,30171392,147,Deevyaa Securities & Stock House Pvt. Ltd,Ashutosh Brokerage & Securities (PVT) Ltd.,2021-05-31T14:38:21.107506,Soaltee Hotel Limited
+133,,2021053105001227,,SHL,19,51,100,241.0,24100.0,2021-05-31,30170585,147,Nepal Investment And Securities Trading Private Limited,Oxford Securities Pvt. Ltd.,2021-05-31T14:37:54.395136,Soaltee Hotel Limited
+134,,2021053105001226,,SHL,59,17,200,240.0,48000.0,2021-05-31,30170146,147,Deevyaa Securities & Stock House Pvt. Ltd,ABC Securities Private Limited,2021-05-31T14:37:21.627885,Soaltee Hotel Limited
+135,,2021053105001225,,SHL,51,17,100,240.0,24000.0,2021-05-31,30170142,147,Oxford Securities Pvt. Ltd.,ABC Securities Private Limited,2021-05-31T14:37:21.627824,Soaltee Hotel Limited
+136,,2021053105001224,,SHL,6,17,300,240.0,72000.0,2021-05-31,30170132,147,Agrawal Securities (PVT) Ltd.,ABC Securities Private Limited,2021-05-31T14:37:21.627766,Soaltee Hotel Limited
+137,,2021053105001223,,SHL,35,17,200,240.0,48000.0,2021-05-31,30170064,147,Kohinoor Investment & Securities Pvt. Ltd.,ABC Securities Private Limited,2021-05-31T14:37:21.627633,Soaltee Hotel Limited
+138,,2021053105001222,,SHL,54,51,300,241.0,72300.0,2021-05-31,30167310,147,Sewa Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:36:10.236573,Soaltee Hotel Limited
+139,,2021053105001221,,SHL,13,51,100,241.0,24100.0,2021-05-31,30167598,147,Thrive Brokerage House Pvt. Ltd,Oxford Securities Pvt. Ltd.,2021-05-31T14:35:33.486848,Soaltee Hotel Limited
+140,,2021053105001220,,SHL,36,51,150,241.0,36150.0,2021-05-31,30165718,147,Secured Securities Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:34:57.312781,Soaltee Hotel Limited
+141,,2021053105001219,,SHL,59,51,250,241.0,60250.0,2021-05-31,30165384,147,Deevyaa Securities & Stock House Pvt. Ltd,Oxford Securities Pvt. Ltd.,2021-05-31T14:34:41.060166,Soaltee Hotel Limited
+142,,2021053105001218,,SHL,59,26,100,241.0,24100.0,2021-05-31,30165381,147,Deevyaa Securities & Stock House Pvt. Ltd,Asian Securities Private Ltd.,2021-05-31T14:34:41.059614,Soaltee Hotel Limited
+143,,2021053105001217,,SHL,59,1,200,241.0,48200.0,2021-05-31,30165378,147,Deevyaa Securities & Stock House Pvt. Ltd,Kumari Securities Private Limited,2021-05-31T14:34:41.05888,Soaltee Hotel Limited
+144,,2021053105001216,,SHL,59,1,200,241.0,48200.0,2021-05-31,30165374,147,Deevyaa Securities & Stock House Pvt. Ltd,Kumari Securities Private Limited,2021-05-31T14:34:41.057836,Soaltee Hotel Limited
+145,,2021053105001215,,SHL,35,21,100,240.0,24000.0,2021-05-31,30165369,147,Kohinoor Investment & Securities Pvt. Ltd.,Midas Stock Broking Company Private Limited,2021-05-31T14:34:39.770817,Soaltee Hotel Limited
+146,,2021053105001214,,SHL,58,51,7,240.0,1680.0,2021-05-31,30166781,147,Naasa Securities Co. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:34:07.396574,Soaltee Hotel Limited
+147,,2021053105001213,,SHL,17,55,100,240.0,24000.0,2021-05-31,30165048,147,ABC Securities Private Limited,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T14:33:55.004768,Soaltee Hotel Limited
+148,,2021053105001212,,SHL,25,55,200,240.0,48000.0,2021-05-31,30165043,147,Sweta Securities Private Limited,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T14:33:55.004041,Soaltee Hotel Limited
+149,,2021053105001211,,SHL,16,58,100,240.0,24000.0,2021-05-31,30165689,147,Primo Securities (PVT) Ltd.,Naasa Securities Co. Ltd.,2021-05-31T14:33:51.281253,Soaltee Hotel Limited
+150,,2021053105001210,,SHL,54,11,100,241.0,24100.0,2021-05-31,30165458,147,Sewa Securities Pvt. Ltd.,Malla & Malla Stock Broking Company Pvt. Limited,2021-05-31T14:33:44.315187,Soaltee Hotel Limited
+151,,2021053105001209,,SHL,57,48,100,241.0,24100.0,2021-05-31,30164033,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T14:33:32.257384,Soaltee Hotel Limited
+152,,2021053105001208,,SHL,34,48,100,241.0,24100.0,2021-05-31,30162744,147,Vision Securities Pvt. Ltd,Trishakti Securities Public Limited,2021-05-31T14:32:43.679193,Soaltee Hotel Limited
+153,,2021053105001207,,SHL,57,48,100,241.0,24100.0,2021-05-31,30162428,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T14:32:28.876827,Soaltee Hotel Limited
+154,,2021053105001206,,SHL,14,48,100,241.0,24100.0,2021-05-31,30161935,147,Nepal Stock House (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T14:30:58.751321,Soaltee Hotel Limited
+155,,2021053105001205,,SHL,45,48,100,241.0,24100.0,2021-05-31,30161835,147,Imperial Securities Company Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:30:58.280175,Soaltee Hotel Limited
+156,,2021053105001204,,SHL,46,48,100,241.0,24100.0,2021-05-31,30161303,147,Kalika Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:30:58.279595,Soaltee Hotel Limited
+157,,2021053105001203,,SHL,34,48,100,241.0,24100.0,2021-05-31,30161103,147,Vision Securities Pvt. Ltd,Trishakti Securities Public Limited,2021-05-31T14:30:58.279075,Soaltee Hotel Limited
+158,,2021053105001202,,SHL,42,48,100,241.0,24100.0,2021-05-31,30161085,147,Sani Securities Company Ltd.,Trishakti Securities Public Limited,2021-05-31T14:30:58.278332,Soaltee Hotel Limited
+159,,2021053105001201,,SHL,42,47,200,241.0,48200.0,2021-05-31,30161299,147,Sani Securities Company Ltd.,Neev Securities Pvt. Ltd.,2021-05-31T14:30:55.731298,Soaltee Hotel Limited
+160,,2021053105001200,,SHL,45,1,100,242.0,24200.0,2021-05-31,30160963,147,Imperial Securities Company Pvt. Ltd.,Kumari Securities Private Limited,2021-05-31T14:30:46.155957,Soaltee Hotel Limited
+161,,2021053105001199,,SHL,42,14,100,241.0,24100.0,2021-05-31,30158419,147,Sani Securities Company Ltd.,Nepal Stock House (PVT) Ltd.,2021-05-31T14:29:17.616681,Soaltee Hotel Limited
+162,,2021053105001198,,SHL,22,14,100,241.0,24100.0,2021-05-31,30158412,147,Siprabi Securities Pvt. Ltd.,Nepal Stock House (PVT) Ltd.,2021-05-31T14:29:17.616149,Soaltee Hotel Limited
+163,,2021053105001197,,SHL,35,14,100,241.0,24100.0,2021-05-31,30158398,147,Kohinoor Investment & Securities Pvt. Ltd.,Nepal Stock House (PVT) Ltd.,2021-05-31T14:29:17.615384,Soaltee Hotel Limited
+164,,2021053105001196,,SHL,52,28,100,241.0,24100.0,2021-05-31,30156728,147,Sundhara Securities Limited,Shree Krishna Securities Ltd.,2021-05-31T14:28:08.927996,Soaltee Hotel Limited
+165,,2021053105001195,,SHL,25,35,50,246.0,12300.0,2021-05-31,30156478,147,Sweta Securities Private Limited,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T14:27:55.922239,Soaltee Hotel Limited
+166,,2021053105001194,,SHL,42,20,110,242.0,26620.0,2021-05-31,30155921,147,Sani Securities Company Ltd.,Sipla Securities Private Limited,2021-05-31T14:27:31.917543,Soaltee Hotel Limited
+167,,2021053105001193,,SHL,28,48,300,242.0,72600.0,2021-05-31,30155272,147,Shree Krishna Securities Ltd.,Trishakti Securities Public Limited,2021-05-31T14:27:01.476638,Soaltee Hotel Limited
+168,,2021053105001192,,KLBSL,51,49,30,1673.0,50190.0,2021-05-31,30154648,694,Oxford Securities Pvt. Ltd.,Online Securities Pvt. Ltd.,2021-05-31T14:26:32.977324,Kisan Lagubitta Bittiya Sanstha Limited
+169,,2021053105001191,,KLBSL,51,29,20,1672.0,33440.0,2021-05-31,30154645,694,Oxford Securities Pvt. Ltd.,Trisul Securities & Invt. Ltd.,2021-05-31T14:26:32.977224,Kisan Lagubitta Bittiya Sanstha Limited
+170,,2021053105001190,,KLBSL,51,36,50,1670.0,83500.0,2021-05-31,30154643,694,Oxford Securities Pvt. Ltd.,Secured Securities Ltd.,2021-05-31T14:26:32.976976,Kisan Lagubitta Bittiya Sanstha Limited
+171,,2021053105001189,,SHL,34,42,200,241.0,48200.0,2021-05-31,30154254,147,Vision Securities Pvt. Ltd,Sani Securities Company Ltd.,2021-05-31T14:26:15.091224,Soaltee Hotel Limited
+172,,2021053105001188,,SHL,41,48,100,242.0,24200.0,2021-05-31,30154114,147,Linch Stock Market Ltd.,Trishakti Securities Public Limited,2021-05-31T14:26:05.056066,Soaltee Hotel Limited
+173,,2021053105001187,,SHL,29,48,100,242.0,24200.0,2021-05-31,30153918,147,Trisul Securities & Invt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:25:51.47931,Soaltee Hotel Limited
+174,,2021053105001186,,SHL,57,48,100,242.0,24200.0,2021-05-31,30154918,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T14:25:22.850357,Soaltee Hotel Limited
+175,,2021053105001185,,SHL,49,48,100,242.0,24200.0,2021-05-31,30152524,147,Online Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:24:54.309293,Soaltee Hotel Limited
+176,,2021053105001184,,SHL,14,48,100,242.0,24200.0,2021-05-31,30152090,147,Nepal Stock House (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T14:24:19.940164,Soaltee Hotel Limited
+177,,2021053105001183,,SHL,29,34,100,242.0,24200.0,2021-05-31,30151949,147,Trisul Securities & Invt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:24:17.959127,Soaltee Hotel Limited
+178,,2021053105001182,,SHL,50,34,100,242.0,24200.0,2021-05-31,30151948,147,Cristal Kanchanjanga Securites Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:24:17.958606,Soaltee Hotel Limited
+179,,2021053105001181,,SHL,16,34,100,242.0,24200.0,2021-05-31,30151946,147,Primo Securities (PVT) Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:24:17.95794,Soaltee Hotel Limited
+180,,2021053105001180,,KLBSL,5,25,40,1660.0,66400.0,2021-05-31,30151732,694,Market Securities & Exchange (PVT) Ltd.,Sweta Securities Private Limited,2021-05-31T14:24:10.942807,Kisan Lagubitta Bittiya Sanstha Limited
+181,,2021053105001179,,KLBSL,36,25,10,1660.0,16600.0,2021-05-31,30150904,694,Secured Securities Ltd.,Sweta Securities Private Limited,2021-05-31T14:23:32.917972,Kisan Lagubitta Bittiya Sanstha Limited
+182,,2021053105001178,,SHL,41,57,100,242.0,24200.0,2021-05-31,30150258,147,Linch Stock Market Ltd.,Aryatara Investment & Securities,2021-05-31T14:23:04.189103,Soaltee Hotel Limited
+183,,2021053105001177,,SHL,29,57,200,242.0,48400.0,2021-05-31,30150256,147,Trisul Securities & Invt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:23:04.188517,Soaltee Hotel Limited
+184,,2021053105001176,,SHL,28,57,200,242.0,48400.0,2021-05-31,30150254,147,Shree Krishna Securities Ltd.,Aryatara Investment & Securities,2021-05-31T14:23:04.187941,Soaltee Hotel Limited
+185,,2021053105001175,,SHL,46,57,452,242.0,109384.0,2021-05-31,30150252,147,Kalika Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T14:23:04.187069,Soaltee Hotel Limited
+186,,2021053105001174,,SHL,46,28,135,242.0,32670.0,2021-05-31,30147051,147,Kalika Securities Pvt. Ltd.,Shree Krishna Securities Ltd.,2021-05-31T14:20:23.948433,Soaltee Hotel Limited
+187,,2021053105001173,,SHL,46,51,100,242.0,24200.0,2021-05-31,30147029,147,Kalika Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:20:21.443033,Soaltee Hotel Limited
+188,,2021053105001172,,SHL,46,17,100,242.0,24200.0,2021-05-31,30147027,147,Kalika Securities Pvt. Ltd.,ABC Securities Private Limited,2021-05-31T14:20:21.442499,Soaltee Hotel Limited
+189,,2021053105001171,,SHL,46,48,213,242.0,51546.0,2021-05-31,30147025,147,Kalika Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:20:21.441798,Soaltee Hotel Limited
+190,,2021053105001170,,SHL,3,48,200,242.0,48400.0,2021-05-31,30146922,147,Arun Securities (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T14:20:15.34084,Soaltee Hotel Limited
+191,,2021053105001169,,SHL,49,48,187,242.0,45254.0,2021-05-31,30146912,147,Online Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:20:14.207472,Soaltee Hotel Limited
+192,,2021053105001168,,SHL,38,48,200,242.0,48400.0,2021-05-31,30146816,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Trishakti Securities Public Limited,2021-05-31T14:20:05.96038,Soaltee Hotel Limited
+193,,2021053105001167,,SHL,38,48,300,242.0,72600.0,2021-05-31,30146809,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Trishakti Securities Public Limited,2021-05-31T14:20:05.95963,Soaltee Hotel Limited
+194,,2021053105001166,,SHL,45,48,200,242.0,48400.0,2021-05-31,30146006,147,Imperial Securities Company Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:19:25.496728,Soaltee Hotel Limited
+195,,2021053105001165,,SHL,29,48,200,242.0,48400.0,2021-05-31,30145950,147,Trisul Securities & Invt. Ltd.,Trishakti Securities Public Limited,2021-05-31T14:19:19.921265,Soaltee Hotel Limited
+196,,2021053105001164,,SHL,6,48,100,242.0,24200.0,2021-05-31,30144234,147,Agrawal Securities (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T14:17:47.444553,Soaltee Hotel Limited
+197,,2021053105001163,,SHL,6,57,400,242.0,96800.0,2021-05-31,30144231,147,Agrawal Securities (PVT) Ltd.,Aryatara Investment & Securities,2021-05-31T14:17:47.444381,Soaltee Hotel Limited
+198,,2021053105001162,,SHL,34,42,100,241.0,24100.0,2021-05-31,30143089,147,Vision Securities Pvt. Ltd,Sani Securities Company Ltd.,2021-05-31T14:16:24.703257,Soaltee Hotel Limited
+199,,2021053105001161,,SHL,42,57,200,242.0,48400.0,2021-05-31,30143054,147,Sani Securities Company Ltd.,Aryatara Investment & Securities,2021-05-31T14:16:22.601429,Soaltee Hotel Limited
+200,,2021053105001160,,SHL,28,28,100,242.0,24200.0,2021-05-31,30142968,147,Shree Krishna Securities Ltd.,Shree Krishna Securities Ltd.,2021-05-31T14:16:14.743935,Soaltee Hotel Limited
+201,,2021053105001159,,SHL,41,19,50,242.0,12100.0,2021-05-31,30140411,147,Linch Stock Market Ltd.,Nepal Investment And Securities Trading Private Limited,2021-05-31T14:13:30.726349,Soaltee Hotel Limited
+202,,2021053105001158,,SHL,34,41,100,241.0,24100.0,2021-05-31,30140307,147,Vision Securities Pvt. Ltd,Linch Stock Market Ltd.,2021-05-31T14:13:20.603388,Soaltee Hotel Limited
+203,,2021053105001157,,SHL,34,48,100,241.0,24100.0,2021-05-31,30137649,147,Vision Securities Pvt. Ltd,Trishakti Securities Public Limited,2021-05-31T14:09:43.816619,Soaltee Hotel Limited
+204,,2021053105001156,,SHL,58,51,100,241.0,24100.0,2021-05-31,30137388,147,Naasa Securities Co. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:09:27.306457,Soaltee Hotel Limited
+205,,2021053105001155,,SHL,45,6,100,241.0,24100.0,2021-05-31,30136302,147,Imperial Securities Company Pvt. Ltd.,Agrawal Securities (PVT) Ltd.,2021-05-31T14:07:54.755814,Soaltee Hotel Limited
+206,,2021053105001154,,SHL,21,50,228,240.0,54720.0,2021-05-31,30135935,147,Midas Stock Broking Company Private Limited,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:07:21.472893,Soaltee Hotel Limited
+207,,2021053105001153,,SHL,49,50,200,240.0,48000.0,2021-05-31,30135934,147,Online Securities Pvt. Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:07:21.472368,Soaltee Hotel Limited
+208,,2021053105001152,,SHL,38,50,300,240.0,72000.0,2021-05-31,30135932,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:07:21.471832,Soaltee Hotel Limited
+209,,2021053105001151,,SHL,22,50,172,240.0,41280.0,2021-05-31,30135930,147,Siprabi Securities Pvt. Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:07:21.471331,Soaltee Hotel Limited
+210,,2021053105001150,,SHL,56,50,100,240.0,24000.0,2021-05-31,30135928,147,Sri Hari Securities Pvt. Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T14:07:21.470628,Soaltee Hotel Limited
+211,,2021053105001149,,SHL,19,26,420,240.0,100800.0,2021-05-31,30134228,147,Nepal Investment And Securities Trading Private Limited,Asian Securities Private Ltd.,2021-05-31T14:05:01.71047,Soaltee Hotel Limited
+212,,2021053105001148,,SHL,14,34,146,240.0,35040.0,2021-05-31,30134142,147,Nepal Stock House (PVT) Ltd.,Vision Securities Pvt. Ltd,2021-05-31T14:04:49.005241,Soaltee Hotel Limited
+213,,2021053105001147,,SHL,36,48,100,241.0,24100.0,2021-05-31,30134066,147,Secured Securities Ltd.,Trishakti Securities Public Limited,2021-05-31T14:04:36.926076,Soaltee Hotel Limited
+214,,2021053105001146,,SHL,56,28,100,241.0,24100.0,2021-05-31,30133625,147,Sri Hari Securities Pvt. Ltd.,Shree Krishna Securities Ltd.,2021-05-31T14:04:03.095499,Soaltee Hotel Limited
+215,,2021053105001145,,SHL,35,28,400,241.0,96400.0,2021-05-31,30133310,147,Kohinoor Investment & Securities Pvt. Ltd.,Shree Krishna Securities Ltd.,2021-05-31T14:03:48.020461,Soaltee Hotel Limited
+216,,2021053105001144,,SHL,25,28,100,241.0,24100.0,2021-05-31,30132768,147,Sweta Securities Private Limited,Shree Krishna Securities Ltd.,2021-05-31T14:02:54.726871,Soaltee Hotel Limited
+217,,2021053105001143,,SHL,14,51,127,240.0,30480.0,2021-05-31,30132429,147,Nepal Stock House (PVT) Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:02:33.820967,Soaltee Hotel Limited
+218,,2021053105001142,,SHL,57,28,365,241.0,87965.0,2021-05-31,30132350,147,Aryatara Investment & Securities,Shree Krishna Securities Ltd.,2021-05-31T14:02:25.081439,Soaltee Hotel Limited
+219,,2021053105001141,,SHL,57,51,135,241.0,32535.0,2021-05-31,30132347,147,Aryatara Investment & Securities,Oxford Securities Pvt. Ltd.,2021-05-31T14:02:25.080591,Soaltee Hotel Limited
+220,,2021053105001140,,SHL,5,51,100,241.0,24100.0,2021-05-31,30132232,147,Market Securities & Exchange (PVT) Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:02:16.878868,Soaltee Hotel Limited
+221,,2021053105001139,,SHL,26,51,100,241.0,24100.0,2021-05-31,30131942,147,Asian Securities Private Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:02:00.227438,Soaltee Hotel Limited
+222,,2021053105001138,,SHL,14,22,127,240.0,30480.0,2021-05-31,30131321,147,Nepal Stock House (PVT) Ltd.,Siprabi Securities Pvt. Ltd.,2021-05-31T14:01:17.507179,Soaltee Hotel Limited
+223,,2021053105001137,,SHL,58,51,100,241.0,24100.0,2021-05-31,30130678,147,Naasa Securities Co. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:00:42.099629,Soaltee Hotel Limited
+224,,2021053105001136,,SHL,14,36,100,240.0,24000.0,2021-05-31,30130415,147,Nepal Stock House (PVT) Ltd.,Secured Securities Ltd.,2021-05-31T14:00:16.677855,Soaltee Hotel Limited
+225,,2021053105001135,,SHL,52,36,100,240.0,24000.0,2021-05-31,30130414,147,Sundhara Securities Limited,Secured Securities Ltd.,2021-05-31T14:00:16.677317,Soaltee Hotel Limited
+226,,2021053105001134,,SHL,43,36,200,240.0,48000.0,2021-05-31,30130412,147,South Asian Bulls Pvt. Ltd.,Secured Securities Ltd.,2021-05-31T14:00:16.676759,Soaltee Hotel Limited
+227,,2021053105001133,,SHL,21,36,100,240.0,24000.0,2021-05-31,30130410,147,Midas Stock Broking Company Private Limited,Secured Securities Ltd.,2021-05-31T14:00:16.676171,Soaltee Hotel Limited
+228,,2021053105001132,,SHL,57,36,500,240.0,120000.0,2021-05-31,30130408,147,Aryatara Investment & Securities,Secured Securities Ltd.,2021-05-31T14:00:16.67568,Soaltee Hotel Limited
+229,,2021053105001131,,SHL,26,36,400,240.0,96000.0,2021-05-31,30130406,147,Asian Securities Private Ltd.,Secured Securities Ltd.,2021-05-31T14:00:16.674907,Soaltee Hotel Limited
+230,,2021053105001130,,SHL,49,51,100,241.0,24100.0,2021-05-31,30130308,147,Online Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T14:00:08.712956,Soaltee Hotel Limited
+231,,2021053105001129,,SHL,26,55,100,240.0,24000.0,2021-05-31,30129955,147,Asian Securities Private Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:59:37.61029,Soaltee Hotel Limited
+232,,2021053105001128,,SHL,45,38,101,241.0,24341.0,2021-05-31,30129464,147,Imperial Securities Company Pvt. Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:59:00.586925,Soaltee Hotel Limited
+233,,2021053105001127,,SHL,59,38,200,241.0,48200.0,2021-05-31,30129038,147,Deevyaa Securities & Stock House Pvt. Ltd,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:58:32.269606,Soaltee Hotel Limited
+234,,2021053105001126,,SHL,52,51,23,240.0,5520.0,2021-05-31,30128971,147,Sundhara Securities Limited,Oxford Securities Pvt. Ltd.,2021-05-31T13:58:25.886376,Soaltee Hotel Limited
+235,,2021053105001125,,SHL,6,38,200,241.0,48200.0,2021-05-31,30128880,147,Agrawal Securities (PVT) Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:58:18.771477,Soaltee Hotel Limited
+236,,2021053105001124,,KLBSL,58,16,200,1660.0,332000.0,2021-05-31,30128273,694,Naasa Securities Co. Ltd.,Primo Securities (PVT) Ltd.,2021-05-31T13:57:33.981517,Kisan Lagubitta Bittiya Sanstha Limited
+237,,2021053105001123,,KLBSL,51,16,100,1662.0,166200.0,2021-05-31,30128272,694,Oxford Securities Pvt. Ltd.,Primo Securities (PVT) Ltd.,2021-05-31T13:57:33.981416,Kisan Lagubitta Bittiya Sanstha Limited
+238,,2021053105001122,,KLBSL,56,16,115,1662.0,191130.0,2021-05-31,30128270,694,Sri Hari Securities Pvt. Ltd.,Primo Securities (PVT) Ltd.,2021-05-31T13:57:33.981169,Kisan Lagubitta Bittiya Sanstha Limited
+239,,2021053105001121,,SHL,58,58,100,241.0,24100.0,2021-05-31,30128098,147,Naasa Securities Co. Ltd.,Naasa Securities Co. Ltd.,2021-05-31T13:57:14.50356,Soaltee Hotel Limited
+240,,2021053105001120,,SHL,58,39,150,243.0,36450.0,2021-05-31,30128014,147,Naasa Securities Co. Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:57:04.265524,Soaltee Hotel Limited
+241,,2021053105001119,,SHL,35,48,159,240.0,38160.0,2021-05-31,30127335,147,Kohinoor Investment & Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.139497,Soaltee Hotel Limited
+242,,2021053105001118,,SHL,49,48,100,240.0,24000.0,2021-05-31,30127334,147,Online Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.138957,Soaltee Hotel Limited
+243,,2021053105001117,,SHL,3,48,100,241.0,24100.0,2021-05-31,30127332,147,Arun Securities (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.138392,Soaltee Hotel Limited
+244,,2021053105001116,,SHL,45,48,100,241.0,24100.0,2021-05-31,30127330,147,Imperial Securities Company Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.137848,Soaltee Hotel Limited
+245,,2021053105001115,,SHL,57,48,100,241.0,24100.0,2021-05-31,30127328,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T13:56:10.137333,Soaltee Hotel Limited
+246,,2021053105001114,,SHL,13,48,100,241.0,24100.0,2021-05-31,30127326,147,Thrive Brokerage House Pvt. Ltd,Trishakti Securities Public Limited,2021-05-31T13:56:10.136808,Soaltee Hotel Limited
+247,,2021053105001113,,SHL,58,48,100,241.0,24100.0,2021-05-31,30127324,147,Naasa Securities Co. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.136294,Soaltee Hotel Limited
+248,,2021053105001112,,SHL,42,48,100,241.0,24100.0,2021-05-31,30127322,147,Sani Securities Company Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.135774,Soaltee Hotel Limited
+249,,2021053105001111,,SHL,43,48,1000,241.0,241000.0,2021-05-31,30127320,147,South Asian Bulls Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.135268,Soaltee Hotel Limited
+250,,2021053105001110,,SHL,38,48,100,241.0,24100.0,2021-05-31,30127318,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.134739,Soaltee Hotel Limited
+251,,2021053105001109,,SHL,32,48,100,241.0,24100.0,2021-05-31,30127316,147,Premier Securities Company Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.134211,Soaltee Hotel Limited
+252,,2021053105001108,,SHL,52,48,100,241.0,24100.0,2021-05-31,30127314,147,Sundhara Securities Limited,Trishakti Securities Public Limited,2021-05-31T13:56:10.133711,Soaltee Hotel Limited
+253,,2021053105001107,,SHL,56,48,100,242.0,24200.0,2021-05-31,30127312,147,Sri Hari Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.133177,Soaltee Hotel Limited
+254,,2021053105001106,,SHL,58,48,200,242.0,48400.0,2021-05-31,30127310,147,Naasa Securities Co. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.132665,Soaltee Hotel Limited
+255,,2021053105001105,,SHL,58,48,200,242.0,48400.0,2021-05-31,30127308,147,Naasa Securities Co. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.132098,Soaltee Hotel Limited
+256,,2021053105001104,,SHL,44,48,500,242.0,121000.0,2021-05-31,30127306,147,Dynamic Money Managers Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.131573,Soaltee Hotel Limited
+257,,2021053105001103,,SHL,10,48,100,242.0,24200.0,2021-05-31,30127304,147,Pragyan Securities (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.131066,Soaltee Hotel Limited
+258,,2021053105001102,,SHL,57,48,200,242.0,48400.0,2021-05-31,30127302,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T13:56:10.130513,Soaltee Hotel Limited
+259,,2021053105001101,,SHL,45,48,200,242.0,48400.0,2021-05-31,30127300,147,Imperial Securities Company Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.129991,Soaltee Hotel Limited
+260,,2021053105001100,,SHL,28,48,100,242.0,24200.0,2021-05-31,30127298,147,Shree Krishna Securities Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.129293,Soaltee Hotel Limited
+261,,2021053105001099,,SHL,57,48,100,242.0,24200.0,2021-05-31,30127296,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T13:56:10.128749,Soaltee Hotel Limited
+262,,2021053105001098,,SHL,6,48,100,242.0,24200.0,2021-05-31,30127294,147,Agrawal Securities (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.1282,Soaltee Hotel Limited
+263,,2021053105001097,,SHL,49,48,100,242.0,24200.0,2021-05-31,30127292,147,Online Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.127688,Soaltee Hotel Limited
+264,,2021053105001096,,SHL,1,48,100,243.0,24300.0,2021-05-31,30127290,147,Kumari Securities Private Limited,Trishakti Securities Public Limited,2021-05-31T13:56:10.127154,Soaltee Hotel Limited
+265,,2021053105001095,,SHL,42,48,391,243.0,95013.0,2021-05-31,30127288,147,Sani Securities Company Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.1266,Soaltee Hotel Limited
+266,,2021053105001094,,SHL,14,48,100,243.0,24300.0,2021-05-31,30127286,147,Nepal Stock House (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.126098,Soaltee Hotel Limited
+267,,2021053105001093,,SHL,47,48,150,243.0,36450.0,2021-05-31,30127284,147,Neev Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.125542,Soaltee Hotel Limited
+268,,2021053105001092,,SHL,55,48,100,243.0,24300.0,2021-05-31,30127282,147,Bhrikuti Stock Broking Co. Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:56:10.124944,Soaltee Hotel Limited
+269,,2021053105001091,,SHL,25,48,100,243.0,24300.0,2021-05-31,30127280,147,Sweta Securities Private Limited,Trishakti Securities Public Limited,2021-05-31T13:56:10.124073,Soaltee Hotel Limited
+270,,2021053105001090,,SHL,58,51,260,244.0,63440.0,2021-05-31,30126428,147,Naasa Securities Co. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:55:05.369637,Soaltee Hotel Limited
+271,,2021053105001089,,SHL,58,6,150,244.0,36600.0,2021-05-31,30126425,147,Naasa Securities Co. Ltd.,Agrawal Securities (PVT) Ltd.,2021-05-31T13:55:05.368829,Soaltee Hotel Limited
+272,,2021053105001088,,KLBSL,56,22,15,1662.0,24930.0,2021-05-31,30125923,694,Sri Hari Securities Pvt. Ltd.,Siprabi Securities Pvt. Ltd.,2021-05-31T13:54:29.394011,Kisan Lagubitta Bittiya Sanstha Limited
+273,,2021053105001087,,SHL,20,6,150,244.0,36600.0,2021-05-31,30125418,147,Sipla Securities Private Limited,Agrawal Securities (PVT) Ltd.,2021-05-31T13:53:34.588489,Soaltee Hotel Limited
+274,,2021053105001086,,SHL,20,29,300,244.0,73200.0,2021-05-31,30125415,147,Sipla Securities Private Limited,Trisul Securities & Invt. Ltd.,2021-05-31T13:53:34.587913,Soaltee Hotel Limited
+275,,2021053105001085,,SHL,20,45,350,244.0,85400.0,2021-05-31,30125413,147,Sipla Securities Private Limited,Imperial Securities Company Pvt. Ltd.,2021-05-31T13:53:34.587381,Soaltee Hotel Limited
+276,,2021053105001084,,SHL,20,48,200,244.0,48800.0,2021-05-31,30125411,147,Sipla Securities Private Limited,Trishakti Securities Public Limited,2021-05-31T13:53:34.58663,Soaltee Hotel Limited
+277,,2021053105001083,,SHL,49,48,100,244.0,24400.0,2021-05-31,30125090,147,Online Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:53:06.899621,Soaltee Hotel Limited
+278,,2021053105001082,,SHL,45,48,100,244.0,24400.0,2021-05-31,30124820,147,Imperial Securities Company Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:52:54.591201,Soaltee Hotel Limited
+279,,2021053105001081,,SHL,6,51,100,243.0,24300.0,2021-05-31,30124656,147,Agrawal Securities (PVT) Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:52:43.052514,Soaltee Hotel Limited
+280,,2021053105001080,,SHL,11,51,100,243.0,24300.0,2021-05-31,30124654,147,Malla & Malla Stock Broking Company Pvt. Limited,Oxford Securities Pvt. Ltd.,2021-05-31T13:52:43.051924,Soaltee Hotel Limited
+281,,2021053105001079,,SHL,57,51,100,243.0,24300.0,2021-05-31,30124652,147,Aryatara Investment & Securities,Oxford Securities Pvt. Ltd.,2021-05-31T13:52:43.051303,Soaltee Hotel Limited
+282,,2021053105001078,,SHL,49,51,100,243.0,24300.0,2021-05-31,30124650,147,Online Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:52:43.050414,Soaltee Hotel Limited
+283,,2021053105001077,,SHL,57,48,100,244.0,24400.0,2021-05-31,30124284,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T13:52:07.822523,Soaltee Hotel Limited
+284,,2021053105001076,,SHL,47,48,100,244.0,24400.0,2021-05-31,30123992,147,Neev Securities Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:51:43.146037,Soaltee Hotel Limited
+285,,2021053105001075,,SHL,58,48,100,244.0,24400.0,2021-05-31,30122950,147,Naasa Securities Co. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:50:37.667507,Soaltee Hotel Limited
+286,,2021053105001074,,SHL,28,48,100,244.0,24400.0,2021-05-31,30122618,147,Shree Krishna Securities Ltd.,Trishakti Securities Public Limited,2021-05-31T13:50:05.828223,Soaltee Hotel Limited
+287,,2021053105001073,,SHL,41,44,1400,244.0,341600.0,2021-05-31,30121577,147,Linch Stock Market Ltd.,Dynamic Money Managers Securities Pvt. Ltd.,2021-05-31T13:49:26.434554,Soaltee Hotel Limited
+288,,2021053105001072,,SHL,41,38,150,244.0,36600.0,2021-05-31,30120763,147,Linch Stock Market Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:48:25.963134,Soaltee Hotel Limited
+289,,2021053105001071,,SHL,41,51,400,244.0,97600.0,2021-05-31,30120761,147,Linch Stock Market Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:48:25.962338,Soaltee Hotel Limited
+290,,2021053105001070,,KLBSL,6,45,50,1672.0,83600.0,2021-05-31,30119828,694,Agrawal Securities (PVT) Ltd.,Imperial Securities Company Pvt. Ltd.,2021-05-31T13:47:30.829259,Kisan Lagubitta Bittiya Sanstha Limited
+291,,2021053105001069,,SHL,38,51,100,244.0,24400.0,2021-05-31,30119034,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:46:31.932522,Soaltee Hotel Limited
+292,,2021053105001068,,SHL,46,51,200,244.0,48800.0,2021-05-31,30118936,147,Kalika Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:46:24.524426,Soaltee Hotel Limited
+293,,2021053105001067,,SHL,38,50,100,243.0,24300.0,2021-05-31,30118861,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T13:46:18.712121,Soaltee Hotel Limited
+294,,2021053105001066,,SHL,58,50,100,243.0,24300.0,2021-05-31,30118860,147,Naasa Securities Co. Ltd.,Cristal Kanchanjanga Securites Pvt. Ltd.,2021-05-31T13:46:18.711332,Soaltee Hotel Limited
+295,,2021053105001065,,SHL,6,51,100,244.0,24400.0,2021-05-31,30118771,147,Agrawal Securities (PVT) Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:46:12.03821,Soaltee Hotel Limited
+296,,2021053105001064,,SHL,34,51,100,244.0,24400.0,2021-05-31,30118682,147,Vision Securities Pvt. Ltd,Oxford Securities Pvt. Ltd.,2021-05-31T13:46:05.347556,Soaltee Hotel Limited
+297,,2021053105001063,,SHL,54,34,300,243.0,72900.0,2021-05-31,30118314,147,Sewa Securities Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:45:44.993102,Soaltee Hotel Limited
+298,,2021053105001062,,SHL,54,38,100,243.0,24300.0,2021-05-31,30116356,147,Sewa Securities Pvt. Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:43:56.416487,Soaltee Hotel Limited
+299,,2021053105001061,,KLBSL,29,7,90,1661.0,149490.0,2021-05-31,30116091,694,Trisul Securities & Invt. Ltd.,J.F. Securites (PVT) Ltd.,2021-05-31T13:43:37.941511,Kisan Lagubitta Bittiya Sanstha Limited
+300,,2021053105001060,,SHL,49,51,100,244.0,24400.0,2021-05-31,30115652,147,Online Securities Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:43:17.836121,Soaltee Hotel Limited
+301,,2021053105001059,,SHL,52,36,100,244.0,24400.0,2021-05-31,30115062,147,Sundhara Securities Limited,Secured Securities Ltd.,2021-05-31T13:42:51.542198,Soaltee Hotel Limited
+302,,2021053105001058,,SHL,45,11,100,245.0,24500.0,2021-05-31,30114479,147,Imperial Securities Company Pvt. Ltd.,Malla & Malla Stock Broking Company Pvt. Limited,2021-05-31T13:42:16.108988,Soaltee Hotel Limited
+303,,2021053105001057,,SHL,43,29,100,244.0,24400.0,2021-05-31,30114468,147,South Asian Bulls Pvt. Ltd.,Trisul Securities & Invt. Ltd.,2021-05-31T13:42:15.171905,Soaltee Hotel Limited
+304,,2021053105001056,,SHL,42,29,200,244.0,48800.0,2021-05-31,30114344,147,Sani Securities Company Ltd.,Trisul Securities & Invt. Ltd.,2021-05-31T13:42:08.559923,Soaltee Hotel Limited
+305,,2021053105001055,,SHL,21,51,1000,244.0,244000.0,2021-05-31,30114052,147,Midas Stock Broking Company Private Limited,Oxford Securities Pvt. Ltd.,2021-05-31T13:41:52.360531,Soaltee Hotel Limited
+306,,2021053105001054,,SHL,21,17,100,244.0,24400.0,2021-05-31,30113646,147,Midas Stock Broking Company Private Limited,ABC Securities Private Limited,2021-05-31T13:41:28.236962,Soaltee Hotel Limited
+307,,2021053105001053,,SHL,54,55,100,243.0,24300.0,2021-05-31,30113345,147,Sewa Securities Pvt. Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.682493,Soaltee Hotel Limited
+308,,2021053105001052,,SHL,13,55,100,243.0,24300.0,2021-05-31,30113344,147,Thrive Brokerage House Pvt. Ltd,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.68197,Soaltee Hotel Limited
+309,,2021053105001051,,SHL,52,55,100,243.0,24300.0,2021-05-31,30113342,147,Sundhara Securities Limited,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.681409,Soaltee Hotel Limited
+310,,2021053105001050,,SHL,21,55,100,243.0,24300.0,2021-05-31,30113340,147,Midas Stock Broking Company Private Limited,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.680895,Soaltee Hotel Limited
+311,,2021053105001049,,SHL,42,55,100,243.0,24300.0,2021-05-31,30113338,147,Sani Securities Company Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.680205,Soaltee Hotel Limited
+312,,2021053105001048,,SHL,8,55,300,243.0,72900.0,2021-05-31,30113336,147,Ashutosh Brokerage & Securities (PVT) Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.679612,Soaltee Hotel Limited
+313,,2021053105001047,,SHL,38,55,100,243.0,24300.0,2021-05-31,30113334,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.679074,Soaltee Hotel Limited
+314,,2021053105001046,,SHL,28,55,100,243.0,24300.0,2021-05-31,30113332,147,Shree Krishna Securities Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:41:17.678288,Soaltee Hotel Limited
+315,,2021053105001045,,SHL,38,17,160,244.0,39040.0,2021-05-31,30112872,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,ABC Securities Private Limited,2021-05-31T13:40:52.862151,Soaltee Hotel Limited
+316,,2021053105001044,,SHL,32,17,100,244.0,24400.0,2021-05-31,30112256,147,Premier Securities Company Ltd.,ABC Securities Private Limited,2021-05-31T13:40:20.2584,Soaltee Hotel Limited
+317,,2021053105001043,,KLBSL,29,10,100,1661.0,166100.0,2021-05-31,30111171,694,Trisul Securities & Invt. Ltd.,Pragyan Securities (PVT) Ltd.,2021-05-31T13:39:16.003332,Kisan Lagubitta Bittiya Sanstha Limited
+318,,2021053105001042,,KLBSL,5,10,10,1662.0,16620.0,2021-05-31,30111170,694,Market Securities & Exchange (PVT) Ltd.,Pragyan Securities (PVT) Ltd.,2021-05-31T13:39:16.002985,Kisan Lagubitta Bittiya Sanstha Limited
+319,,2021053105001041,,SHL,54,58,927,243.0,225261.0,2021-05-31,30110533,147,Sewa Securities Pvt. Ltd.,Naasa Securities Co. Ltd.,2021-05-31T13:38:36.448031,Soaltee Hotel Limited
+320,,2021053105001040,,SHL,26,17,600,244.0,146400.0,2021-05-31,30110226,147,Asian Securities Private Ltd.,ABC Securities Private Limited,2021-05-31T13:38:12.593049,Soaltee Hotel Limited
+321,,2021053105001039,,SHL,26,57,100,244.0,24400.0,2021-05-31,30110223,147,Asian Securities Private Ltd.,Aryatara Investment & Securities,2021-05-31T13:38:12.592192,Soaltee Hotel Limited
+322,,2021053105001038,,SHL,53,57,500,244.0,122000.0,2021-05-31,30109656,147,Investment Management Nepal Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T13:37:33.208973,Soaltee Hotel Limited
+323,,2021053105001037,,SHL,3,48,500,244.0,122000.0,2021-05-31,30108785,147,Arun Securities (PVT) Ltd.,Trishakti Securities Public Limited,2021-05-31T13:36:41.779197,Soaltee Hotel Limited
+324,,2021053105001036,,SHL,57,48,220,244.0,53680.0,2021-05-31,30108696,147,Aryatara Investment & Securities,Trishakti Securities Public Limited,2021-05-31T13:36:36.893772,Soaltee Hotel Limited
+325,,2021053105001035,,SHL,57,58,100,244.0,24400.0,2021-05-31,30108693,147,Aryatara Investment & Securities,Naasa Securities Co. Ltd.,2021-05-31T13:36:36.892893,Soaltee Hotel Limited
+326,,2021053105001034,,SHL,26,42,200,244.0,48800.0,2021-05-31,30108668,147,Asian Securities Private Ltd.,Sani Securities Company Ltd.,2021-05-31T13:36:34.494717,Soaltee Hotel Limited
+327,,2021053105001033,,SHL,26,21,100,244.0,24400.0,2021-05-31,30108665,147,Asian Securities Private Ltd.,Midas Stock Broking Company Private Limited,2021-05-31T13:36:34.494064,Soaltee Hotel Limited
+328,,2021053105001032,,SHL,26,39,200,244.0,48800.0,2021-05-31,30108663,147,Asian Securities Private Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:36:34.493107,Soaltee Hotel Limited
+329,,2021053105001031,,KLBSL,5,10,190,1662.0,315780.0,2021-05-31,30108261,694,Market Securities & Exchange (PVT) Ltd.,Pragyan Securities (PVT) Ltd.,2021-05-31T13:36:10.536972,Kisan Lagubitta Bittiya Sanstha Limited
+330,,2021053105001030,,SHL,17,39,200,244.0,48800.0,2021-05-31,30107840,147,ABC Securities Private Limited,Sumeru Securities Pvt. Ltd.,2021-05-31T13:35:40.22926,Soaltee Hotel Limited
+331,,2021053105001029,,SHL,4,39,100,244.0,24400.0,2021-05-31,30107448,147,Opal Securities Investment (PVT) Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:35:16.896007,Soaltee Hotel Limited
+332,,2021053105001028,,SHL,4,39,120,244.0,29280.0,2021-05-31,30107445,147,Opal Securities Investment (PVT) Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:35:16.895156,Soaltee Hotel Limited
+333,,2021053105001027,,SHL,45,39,100,244.0,24400.0,2021-05-31,30107362,147,Imperial Securities Company Pvt. Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:35:12.908191,Soaltee Hotel Limited
+334,,2021053105001026,,KLBSL,29,49,199,1671.0,332529.0,2021-05-31,30105942,694,Trisul Securities & Invt. Ltd.,Online Securities Pvt. Ltd.,2021-05-31T13:33:53.140713,Kisan Lagubitta Bittiya Sanstha Limited
+335,,2021053105001025,,SHL,56,39,300,244.0,73200.0,2021-05-31,30105928,147,Sri Hari Securities Pvt. Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:33:51.584521,Soaltee Hotel Limited
+336,,2021053105001024,,SHL,49,39,100,244.0,24400.0,2021-05-31,30105594,147,Online Securities Pvt. Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:33:33.459676,Soaltee Hotel Limited
+337,,2021053105001023,,SHL,38,39,100,244.0,24400.0,2021-05-31,30105592,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Sumeru Securities Pvt. Ltd.,2021-05-31T13:33:33.458796,Soaltee Hotel Limited
+338,,2021053105001022,,SHL,45,11,100,245.0,24500.0,2021-05-31,30105447,147,Imperial Securities Company Pvt. Ltd.,Malla & Malla Stock Broking Company Pvt. Limited,2021-05-31T13:33:26.292825,Soaltee Hotel Limited
+339,,2021053105001021,,SHL,48,11,359,245.0,87955.0,2021-05-31,30105318,147,Trishakti Securities Public Limited,Malla & Malla Stock Broking Company Pvt. Limited,2021-05-31T13:33:19.279489,Soaltee Hotel Limited
+340,,2021053105001020,,SHL,48,59,641,245.0,157045.0,2021-05-31,30105315,147,Trishakti Securities Public Limited,Deevyaa Securities & Stock House Pvt. Ltd,2021-05-31T13:33:19.278538,Soaltee Hotel Limited
+341,,2021053105001019,,SHL,29,55,50,244.0,12200.0,2021-05-31,30105255,147,Trisul Securities & Invt. Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:33:13.386922,Soaltee Hotel Limited
+342,,2021053105001018,,SHL,58,55,150,244.0,36600.0,2021-05-31,30105254,147,Naasa Securities Co. Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:33:13.386555,Soaltee Hotel Limited
+343,,2021053105001017,,SHL,5,55,100,244.0,24400.0,2021-05-31,30105252,147,Market Securities & Exchange (PVT) Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:33:13.385947,Soaltee Hotel Limited
+344,,2021053105001016,,SHL,41,55,100,244.0,24400.0,2021-05-31,30105250,147,Linch Stock Market Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:33:13.385364,Soaltee Hotel Limited
+345,,2021053105001015,,SHL,14,55,100,244.0,24400.0,2021-05-31,30105248,147,Nepal Stock House (PVT) Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:33:13.384435,Soaltee Hotel Limited
+346,,2021053105001014,,KLBSL,29,53,100,1670.0,167000.0,2021-05-31,30105102,694,Trisul Securities & Invt. Ltd.,Investment Management Nepal Pvt. Ltd.,2021-05-31T13:33:01.16745,Kisan Lagubitta Bittiya Sanstha Limited
+347,,2021053105001013,,KLBSL,29,28,50,1669.0,83450.0,2021-05-31,30105099,694,Trisul Securities & Invt. Ltd.,Shree Krishna Securities Ltd.,2021-05-31T13:33:01.16726,Kisan Lagubitta Bittiya Sanstha Limited
+348,,2021053105001012,,SHL,46,11,200,245.0,49000.0,2021-05-31,30105022,147,Kalika Securities Pvt. Ltd.,Malla & Malla Stock Broking Company Pvt. Limited,2021-05-31T13:32:50.596052,Soaltee Hotel Limited
+349,,2021053105001011,,SHL,46,42,300,245.0,73500.0,2021-05-31,30105019,147,Kalika Securities Pvt. Ltd.,Sani Securities Company Ltd.,2021-05-31T13:32:50.595397,Soaltee Hotel Limited
+350,,2021053105001010,,SHL,46,28,500,245.0,122500.0,2021-05-31,30105017,147,Kalika Securities Pvt. Ltd.,Shree Krishna Securities Ltd.,2021-05-31T13:32:50.594455,Soaltee Hotel Limited
+351,,2021053105001009,,SHL,36,38,300,245.0,73500.0,2021-05-31,30101770,147,Secured Securities Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:29:49.013355,Soaltee Hotel Limited
+352,,2021053105001008,,SHL,36,33,100,245.0,24500.0,2021-05-31,30101767,147,Secured Securities Ltd.,Dakshinkali Investment & Securities Pvt. Ltd.,2021-05-31T13:29:49.012751,Soaltee Hotel Limited
+353,,2021053105001007,,SHL,36,59,100,245.0,24500.0,2021-05-31,30101765,147,Secured Securities Ltd.,Deevyaa Securities & Stock House Pvt. Ltd,2021-05-31T13:29:49.011953,Soaltee Hotel Limited
+354,,2021053105001006,,KLBSL,13,52,209,1666.0,348194.0,2021-05-31,30101676,694,Thrive Brokerage House Pvt. Ltd,Sundhara Securities Limited,2021-05-31T13:29:43.326212,Kisan Lagubitta Bittiya Sanstha Limited
+355,,2021053105001005,,SHL,8,55,100,245.0,24500.0,2021-05-31,30101670,147,Ashutosh Brokerage & Securities (PVT) Ltd.,Bhrikuti Stock Broking Co. Pvt. Ltd.,2021-05-31T13:29:42.472782,Soaltee Hotel Limited
+356,,2021053105001004,,SHL,8,58,100,245.0,24500.0,2021-05-31,30101667,147,Ashutosh Brokerage & Securities (PVT) Ltd.,Naasa Securities Co. Ltd.,2021-05-31T13:29:42.472212,Soaltee Hotel Limited
+357,,2021053105001003,,SHL,8,56,200,245.0,49000.0,2021-05-31,30101665,147,Ashutosh Brokerage & Securities (PVT) Ltd.,Sri Hari Securities Pvt. Ltd.,2021-05-31T13:29:42.471499,Soaltee Hotel Limited
+358,,2021053105001002,,SHL,8,38,100,245.0,24500.0,2021-05-31,30101663,147,Ashutosh Brokerage & Securities (PVT) Ltd.,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:29:42.470758,Soaltee Hotel Limited
+359,,2021053105001001,,SHL,56,46,100,245.0,24500.0,2021-05-31,30101632,147,Sri Hari Securities Pvt. Ltd.,Kalika Securities Pvt. Ltd.,2021-05-31T13:29:41.107205,Soaltee Hotel Limited
+360,,2021053105001000,,SHL,53,32,379,245.0,92855.0,2021-05-31,30100938,147,Investment Management Nepal Pvt. Ltd.,Premier Securities Company Ltd.,2021-05-31T13:29:00.109171,Soaltee Hotel Limited
+361,,2021053105000999,,SHL,53,6,521,245.0,127645.0,2021-05-31,30100935,147,Investment Management Nepal Pvt. Ltd.,Agrawal Securities (PVT) Ltd.,2021-05-31T13:29:00.108489,Soaltee Hotel Limited
+362,,2021053105000998,,SHL,53,48,400,245.0,98000.0,2021-05-31,30100933,147,Investment Management Nepal Pvt. Ltd.,Trishakti Securities Public Limited,2021-05-31T13:29:00.107843,Soaltee Hotel Limited
+363,,2021053105000997,,SHL,53,5,200,245.0,49000.0,2021-05-31,30100931,147,Investment Management Nepal Pvt. Ltd.,Market Securities & Exchange (PVT) Ltd.,2021-05-31T13:29:00.106962,Soaltee Hotel Limited
+364,,2021053105000996,,SHL,53,51,500,245.0,122500.0,2021-05-31,30100929,147,Investment Management Nepal Pvt. Ltd.,Oxford Securities Pvt. Ltd.,2021-05-31T13:29:00.106232,Soaltee Hotel Limited
+365,,2021053105000995,,SHL,53,28,1800,245.0,441000.0,2021-05-31,30100927,147,Investment Management Nepal Pvt. Ltd.,Shree Krishna Securities Ltd.,2021-05-31T13:29:00.10555,Soaltee Hotel Limited
+366,,2021053105000994,,SHL,53,16,100,245.0,24500.0,2021-05-31,30100925,147,Investment Management Nepal Pvt. Ltd.,Primo Securities (PVT) Ltd.,2021-05-31T13:29:00.104906,Soaltee Hotel Limited
+367,,2021053105000993,,SHL,53,43,100,245.0,24500.0,2021-05-31,30100923,147,Investment Management Nepal Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T13:29:00.103946,Soaltee Hotel Limited
+368,,2021053105000992,,SHL,49,26,2000,245.0,490000.0,2021-05-31,30099954,147,Online Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:28:09.955007,Soaltee Hotel Limited
+369,,2021053105000991,,SHL,56,26,100,245.0,24500.0,2021-05-31,30098278,147,Sri Hari Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:26:47.340773,Soaltee Hotel Limited
+370,,2021053105000990,,SHL,54,26,300,245.0,73500.0,2021-05-31,30097460,147,Sewa Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:26:14.737972,Soaltee Hotel Limited
+371,,2021053105000989,,SHL,29,6,100,244.0,24400.0,2021-05-31,30097321,147,Trisul Securities & Invt. Ltd.,Agrawal Securities (PVT) Ltd.,2021-05-31T13:26:08.583158,Soaltee Hotel Limited
+372,,2021053105000988,,SHL,53,26,100,245.0,24500.0,2021-05-31,30096622,147,Investment Management Nepal Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:25:33.933568,Soaltee Hotel Limited
+373,,2021053105000987,,SHL,8,26,200,245.0,49000.0,2021-05-31,30095706,147,Ashutosh Brokerage & Securities (PVT) Ltd.,Asian Securities Private Ltd.,2021-05-31T13:24:49.549978,Soaltee Hotel Limited
+374,,2021053105000986,,SHL,34,26,200,245.0,49000.0,2021-05-31,30095542,147,Vision Securities Pvt. Ltd,Asian Securities Private Ltd.,2021-05-31T13:24:40.131577,Soaltee Hotel Limited
+375,,2021053105000985,,SHL,45,26,151,245.0,36995.0,2021-05-31,30094872,147,Imperial Securities Company Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:24:07.427091,Soaltee Hotel Limited
+376,,2021053105000984,,SHL,43,52,50,244.0,12200.0,2021-05-31,30094507,147,South Asian Bulls Pvt. Ltd.,Sundhara Securities Limited,2021-05-31T13:23:47.651126,Soaltee Hotel Limited
+377,,2021053105000983,,SHL,57,26,105,245.0,25725.0,2021-05-31,30094027,147,Aryatara Investment & Securities,Asian Securities Private Ltd.,2021-05-31T13:23:10.902232,Soaltee Hotel Limited
+378,,2021053105000982,,KLBSL,48,29,10,1660.0,16600.0,2021-05-31,30093389,694,Trishakti Securities Public Limited,Trisul Securities & Invt. Ltd.,2021-05-31T13:22:51.396375,Kisan Lagubitta Bittiya Sanstha Limited
+379,,2021053105000981,,SHL,45,26,101,245.0,24745.0,2021-05-31,30092236,147,Imperial Securities Company Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:21:47.645056,Soaltee Hotel Limited
+380,,2021053105000980,,SHL,17,26,100,245.0,24500.0,2021-05-31,30092022,147,ABC Securities Private Limited,Asian Securities Private Ltd.,2021-05-31T13:21:35.616411,Soaltee Hotel Limited
+381,,2021053105000979,,SHL,52,56,50,245.0,12250.0,2021-05-31,30091649,147,Sundhara Securities Limited,Sri Hari Securities Pvt. Ltd.,2021-05-31T13:21:16.059782,Soaltee Hotel Limited
+382,,2021053105000978,,SHL,29,58,200,244.0,48800.0,2021-05-31,30090730,147,Trisul Securities & Invt. Ltd.,Naasa Securities Co. Ltd.,2021-05-31T13:20:18.208501,Soaltee Hotel Limited
+383,,2021053105000977,,SHL,22,26,200,245.0,49000.0,2021-05-31,30089642,147,Siprabi Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:19:13.088127,Soaltee Hotel Limited
+384,,2021053105000976,,SHL,29,57,150,244.0,36600.0,2021-05-31,30088775,147,Trisul Securities & Invt. Ltd.,Aryatara Investment & Securities,2021-05-31T13:18:25.613367,Soaltee Hotel Limited
+385,,2021053105000975,,SHL,21,57,100,244.0,24400.0,2021-05-31,30088774,147,Midas Stock Broking Company Private Limited,Aryatara Investment & Securities,2021-05-31T13:18:25.612603,Soaltee Hotel Limited
+386,,2021053105000974,,SHL,34,52,150,244.0,36600.0,2021-05-31,30088728,147,Vision Securities Pvt. Ltd,Sundhara Securities Limited,2021-05-31T13:18:23.78264,Soaltee Hotel Limited
+387,,2021053105000973,,SHL,42,52,200,244.0,48800.0,2021-05-31,30088726,147,Sani Securities Company Ltd.,Sundhara Securities Limited,2021-05-31T13:18:23.782103,Soaltee Hotel Limited
+388,,2021053105000972,,SHL,59,52,100,244.0,24400.0,2021-05-31,30088724,147,Deevyaa Securities & Stock House Pvt. Ltd,Sundhara Securities Limited,2021-05-31T13:18:23.78138,Soaltee Hotel Limited
+389,,2021053105000971,,SHL,59,38,100,244.0,24400.0,2021-05-31,30087687,147,Deevyaa Securities & Stock House Pvt. Ltd,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,2021-05-31T13:17:10.858211,Soaltee Hotel Limited
+390,,2021053105000970,,SHL,35,57,300,244.0,73200.0,2021-05-31,30086830,147,Kohinoor Investment & Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T13:16:10.837059,Soaltee Hotel Limited
+391,,2021053105000969,,SHL,35,37,2696,244.0,657824.0,2021-05-31,30086419,147,Kohinoor Investment & Securities Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:15:45.857618,Soaltee Hotel Limited
+392,,2021053105000968,,SHL,26,37,400,244.0,97600.0,2021-05-31,30086418,147,Asian Securities Private Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:15:45.856609,Soaltee Hotel Limited
+393,,2021053105000967,,SHL,38,26,500,245.0,122500.0,2021-05-31,30086172,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Asian Securities Private Ltd.,2021-05-31T13:15:28.807876,Soaltee Hotel Limited
+394,,2021053105000966,,SHL,26,28,250,244.0,61000.0,2021-05-31,30085801,147,Asian Securities Private Ltd.,Shree Krishna Securities Ltd.,2021-05-31T13:15:04.568225,Soaltee Hotel Limited
+395,,2021053105000965,,SHL,19,28,225,244.0,54900.0,2021-05-31,30085798,147,Nepal Investment And Securities Trading Private Limited,Shree Krishna Securities Ltd.,2021-05-31T13:15:04.567243,Soaltee Hotel Limited
+396,,2021053105000964,,SHL,19,37,200,244.0,48800.0,2021-05-31,30085635,147,Nepal Investment And Securities Trading Private Limited,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.711024,Soaltee Hotel Limited
+397,,2021053105000963,,SHL,49,37,100,244.0,24400.0,2021-05-31,30085634,147,Online Securities Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.710409,Soaltee Hotel Limited
+398,,2021053105000962,,SHL,45,37,100,244.0,24400.0,2021-05-31,30085632,147,Imperial Securities Company Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.709848,Soaltee Hotel Limited
+399,,2021053105000961,,SHL,45,37,100,244.0,24400.0,2021-05-31,30085630,147,Imperial Securities Company Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.70925,Soaltee Hotel Limited
+400,,2021053105000960,,SHL,29,37,100,244.0,24400.0,2021-05-31,30085628,147,Trisul Securities & Invt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.708664,Soaltee Hotel Limited
+401,,2021053105000959,,SHL,16,37,100,244.0,24400.0,2021-05-31,30085626,147,Primo Securities (PVT) Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.708052,Soaltee Hotel Limited
+402,,2021053105000958,,SHL,38,37,150,244.0,36600.0,2021-05-31,30085624,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.70747,Soaltee Hotel Limited
+403,,2021053105000957,,SHL,42,37,500,244.0,122000.0,2021-05-31,30085622,147,Sani Securities Company Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.706886,Soaltee Hotel Limited
+404,,2021053105000956,,SHL,20,37,300,244.0,73200.0,2021-05-31,30085620,147,Sipla Securities Private Limited,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.706293,Soaltee Hotel Limited
+405,,2021053105000955,,SHL,16,37,100,244.0,24400.0,2021-05-31,30085618,147,Primo Securities (PVT) Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.705603,Soaltee Hotel Limited
+406,,2021053105000954,,SHL,56,37,250,244.0,61000.0,2021-05-31,30085616,147,Sri Hari Securities Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:14:53.704607,Soaltee Hotel Limited
+407,,2021053105000953,,SHL,56,20,100,244.0,24400.0,2021-05-31,30084978,147,Sri Hari Securities Pvt. Ltd.,Sipla Securities Private Limited,2021-05-31T13:14:06.986463,Soaltee Hotel Limited
+408,,2021053105000952,,KLBSL,20,39,44,1652.0,72688.0,2021-05-31,30084857,694,Sipla Securities Private Limited,Sumeru Securities Pvt. Ltd.,2021-05-31T13:13:59.50235,Kisan Lagubitta Bittiya Sanstha Limited
+409,,2021053105000951,,SHL,56,37,150,244.0,36600.0,2021-05-31,30084421,147,Sri Hari Securities Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.500047,Soaltee Hotel Limited
+410,,2021053105000950,,SHL,41,37,150,244.0,36600.0,2021-05-31,30084420,147,Linch Stock Market Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.499415,Soaltee Hotel Limited
+411,,2021053105000949,,SHL,59,37,200,244.0,48800.0,2021-05-31,30084418,147,Deevyaa Securities & Stock House Pvt. Ltd,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.498748,Soaltee Hotel Limited
+412,,2021053105000948,,SHL,17,37,100,244.0,24400.0,2021-05-31,30084416,147,ABC Securities Private Limited,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.49784,Soaltee Hotel Limited
+413,,2021053105000947,,SHL,35,37,100,244.0,24400.0,2021-05-31,30084414,147,Kohinoor Investment & Securities Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.49716,Soaltee Hotel Limited
+414,,2021053105000946,,SHL,38,37,100,244.0,24400.0,2021-05-31,30084412,147,Dipshikha Dhitopatra Karobar Co. Pvt Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.496537,Soaltee Hotel Limited
+415,,2021053105000945,,SHL,35,37,300,244.0,73200.0,2021-05-31,30084410,147,Kohinoor Investment & Securities Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.495918,Soaltee Hotel Limited
+416,,2021053105000944,,SHL,51,37,100,244.0,24400.0,2021-05-31,30084406,147,Oxford Securities Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.495313,Soaltee Hotel Limited
+417,,2021053105000943,,SHL,32,37,200,244.0,48800.0,2021-05-31,30084404,147,Premier Securities Company Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.494681,Soaltee Hotel Limited
+418,,2021053105000942,,SHL,21,37,100,244.0,24400.0,2021-05-31,30084402,147,Midas Stock Broking Company Private Limited,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.493968,Soaltee Hotel Limited
+419,,2021053105000941,,SHL,16,37,100,244.0,24400.0,2021-05-31,30084400,147,Primo Securities (PVT) Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.49331,Soaltee Hotel Limited
+420,,2021053105000940,,SHL,45,37,400,244.0,97600.0,2021-05-31,30084398,147,Imperial Securities Company Pvt. Ltd.,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:13:33.49226,Soaltee Hotel Limited
+421,,2021053105000939,,SHL,6,14,2,245.0,490.0,2021-05-31,30081627,147,Agrawal Securities (PVT) Ltd.,Nepal Stock House (PVT) Ltd.,2021-05-31T13:10:38.560435,Soaltee Hotel Limited
+422,,2021053105000938,,SHL,22,26,120,245.0,29400.0,2021-05-31,30081564,147,Siprabi Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:10:34.573062,Soaltee Hotel Limited
+423,,2021053105000937,,SHL,11,26,100,245.0,24500.0,2021-05-31,30080620,147,Malla & Malla Stock Broking Company Pvt. Limited,Asian Securities Private Ltd.,2021-05-31T13:09:48.747866,Soaltee Hotel Limited
+424,,2021053105000936,,SHL,54,26,100,245.0,24500.0,2021-05-31,30080338,147,Sewa Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:09:28.428105,Soaltee Hotel Limited
+425,,2021053105000935,,SHL,14,26,100,245.0,24500.0,2021-05-31,30080336,147,Nepal Stock House (PVT) Ltd.,Asian Securities Private Ltd.,2021-05-31T13:09:28.427455,Soaltee Hotel Limited
+426,,2021053105000934,,SHL,1,26,100,245.0,24500.0,2021-05-31,30080334,147,Kumari Securities Private Limited,Asian Securities Private Ltd.,2021-05-31T13:09:28.426831,Soaltee Hotel Limited
+427,,2021053105000933,,SHL,45,26,200,245.0,49000.0,2021-05-31,30080332,147,Imperial Securities Company Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:09:28.426122,Soaltee Hotel Limited
+428,,2021053105000932,,SHL,55,26,199,245.0,48755.0,2021-05-31,30080330,147,Bhrikuti Stock Broking Co. Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:09:28.425283,Soaltee Hotel Limited
+429,,2021053105000931,,SHL,55,3,101,245.0,24745.0,2021-05-31,30079527,147,Bhrikuti Stock Broking Co. Pvt. Ltd.,Arun Securities (PVT) Ltd.,2021-05-31T13:08:45.58392,Soaltee Hotel Limited
+430,,2021053105000930,,SHL,36,26,100,246.0,24600.0,2021-05-31,30077742,147,Secured Securities Ltd.,Asian Securities Private Ltd.,2021-05-31T13:07:12.627503,Soaltee Hotel Limited
+431,,2021053105000929,,SHL,55,13,100,245.0,24500.0,2021-05-31,30077677,147,Bhrikuti Stock Broking Co. Pvt. Ltd.,Thrive Brokerage House Pvt. Ltd,2021-05-31T13:07:08.727411,Soaltee Hotel Limited
+432,,2021053105000928,,SHL,55,35,100,245.0,24500.0,2021-05-31,30077645,147,Bhrikuti Stock Broking Co. Pvt. Ltd.,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:07:06.977073,Soaltee Hotel Limited
+433,,2021053105000927,,SHL,48,35,100,245.0,24500.0,2021-05-31,30077644,147,Trishakti Securities Public Limited,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:07:06.976063,Soaltee Hotel Limited
+434,,2021053105000926,,SHL,58,5,100,245.0,24500.0,2021-05-31,30077396,147,Naasa Securities Co. Ltd.,Market Securities & Exchange (PVT) Ltd.,2021-05-31T13:06:51.92721,Soaltee Hotel Limited
+435,,2021053105000925,,SHL,47,5,200,245.0,49000.0,2021-05-31,30077395,147,Neev Securities Pvt. Ltd.,Market Securities & Exchange (PVT) Ltd.,2021-05-31T13:06:51.926532,Soaltee Hotel Limited
+436,,2021053105000924,,SHL,51,5,500,245.0,122500.0,2021-05-31,30077393,147,Oxford Securities Pvt. Ltd.,Market Securities & Exchange (PVT) Ltd.,2021-05-31T13:06:51.92584,Soaltee Hotel Limited
+437,,2021053105000923,,SHL,28,5,100,245.0,24500.0,2021-05-31,30077391,147,Shree Krishna Securities Ltd.,Market Securities & Exchange (PVT) Ltd.,2021-05-31T13:06:51.925195,Soaltee Hotel Limited
+438,,2021053105000922,,SHL,36,5,100,245.0,24500.0,2021-05-31,30077389,147,Secured Securities Ltd.,Market Securities & Exchange (PVT) Ltd.,2021-05-31T13:06:51.92428,Soaltee Hotel Limited
+439,,2021053105000921,,SHL,34,43,200,245.0,49000.0,2021-05-31,30077155,147,Vision Securities Pvt. Ltd,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.684618,Soaltee Hotel Limited
+440,,2021053105000920,,SHL,45,43,200,245.0,49000.0,2021-05-31,30077153,147,Imperial Securities Company Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.684008,Soaltee Hotel Limited
+441,,2021053105000919,,SHL,11,43,100,245.0,24500.0,2021-05-31,30077151,147,Malla & Malla Stock Broking Company Pvt. Limited,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.683371,Soaltee Hotel Limited
+442,,2021053105000918,,SHL,45,43,100,245.0,24500.0,2021-05-31,30077149,147,Imperial Securities Company Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.682728,Soaltee Hotel Limited
+443,,2021053105000917,,SHL,47,43,810,245.0,198450.0,2021-05-31,30077147,147,Neev Securities Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.682065,Soaltee Hotel Limited
+444,,2021053105000916,,SHL,29,43,200,245.0,49000.0,2021-05-31,30077145,147,Trisul Securities & Invt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.681416,Soaltee Hotel Limited
+445,,2021053105000915,,SHL,35,43,100,245.0,24500.0,2021-05-31,30077143,147,Kohinoor Investment & Securities Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.680761,Soaltee Hotel Limited
+446,,2021053105000914,,SHL,1,43,100,245.0,24500.0,2021-05-31,30077141,147,Kumari Securities Private Limited,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.680096,Soaltee Hotel Limited
+447,,2021053105000913,,SHL,39,43,500,245.0,122500.0,2021-05-31,30077139,147,Sumeru Securities Pvt. Ltd.,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.679355,Soaltee Hotel Limited
+448,,2021053105000912,,SHL,34,43,100,245.0,24500.0,2021-05-31,30077137,147,Vision Securities Pvt. Ltd,South Asian Bulls Pvt. Ltd.,2021-05-31T13:06:36.678477,Soaltee Hotel Limited
+449,,2021053105000911,,SHL,58,1,100,245.0,24500.0,2021-05-31,30076966,147,Naasa Securities Co. Ltd.,Kumari Securities Private Limited,2021-05-31T13:06:34.406628,Soaltee Hotel Limited
+450,,2021053105000910,,SHL,10,1,100,245.0,24500.0,2021-05-31,30076965,147,Pragyan Securities (PVT) Ltd.,Kumari Securities Private Limited,2021-05-31T13:06:34.405824,Soaltee Hotel Limited
+451,,2021053105000909,,KLBSL,20,37,64,1652.0,105728.0,2021-05-31,30077034,694,Sipla Securities Private Limited,Swarna Laxmi Securities Pvt. Ltd.,2021-05-31T13:06:33.301043,Kisan Lagubitta Bittiya Sanstha Limited
+452,,2021053105000908,,SHL,32,34,200,245.0,49000.0,2021-05-31,30076882,147,Premier Securities Company Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:29.665392,Soaltee Hotel Limited
+453,,2021053105000907,,SHL,33,34,200,245.0,49000.0,2021-05-31,30076421,147,Dakshinkali Investment & Securities Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.561235,Soaltee Hotel Limited
+454,,2021053105000906,,SHL,35,34,100,245.0,24500.0,2021-05-31,30076419,147,Kohinoor Investment & Securities Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.560554,Soaltee Hotel Limited
+455,,2021053105000905,,SHL,49,34,500,245.0,122500.0,2021-05-31,30076417,147,Online Securities Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.559905,Soaltee Hotel Limited
+456,,2021053105000904,,SHL,1,34,200,245.0,49000.0,2021-05-31,30076415,147,Kumari Securities Private Limited,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.559196,Soaltee Hotel Limited
+457,,2021053105000903,,SHL,6,34,1000,245.0,245000.0,2021-05-31,30076412,147,Agrawal Securities (PVT) Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.558496,Soaltee Hotel Limited
+458,,2021053105000902,,SHL,26,34,100,245.0,24500.0,2021-05-31,30076409,147,Asian Securities Private Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.557802,Soaltee Hotel Limited
+459,,2021053105000901,,SHL,13,34,200,245.0,49000.0,2021-05-31,30076407,147,Thrive Brokerage House Pvt. Ltd,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.557106,Soaltee Hotel Limited
+460,,2021053105000900,,SHL,45,34,150,245.0,36750.0,2021-05-31,30076405,147,Imperial Securities Company Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.556411,Soaltee Hotel Limited
+461,,2021053105000899,,SHL,39,34,1000,245.0,245000.0,2021-05-31,30076403,147,Sumeru Securities Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.555743,Soaltee Hotel Limited
+462,,2021053105000898,,SHL,43,34,100,245.0,24500.0,2021-05-31,30076401,147,South Asian Bulls Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.555048,Soaltee Hotel Limited
+463,,2021053105000897,,SHL,16,34,1000,245.0,245000.0,2021-05-31,30076399,147,Primo Securities (PVT) Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.554365,Soaltee Hotel Limited
+464,,2021053105000896,,SHL,13,34,100,245.0,24500.0,2021-05-31,30076397,147,Thrive Brokerage House Pvt. Ltd,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.553667,Soaltee Hotel Limited
+465,,2021053105000895,,SHL,56,34,100,245.0,24500.0,2021-05-31,30076395,147,Sri Hari Securities Pvt. Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.552889,Soaltee Hotel Limited
+466,,2021053105000894,,SHL,41,34,140,245.0,34300.0,2021-05-31,30076393,147,Linch Stock Market Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.552144,Soaltee Hotel Limited
+467,,2021053105000893,,SHL,13,34,100,245.0,24500.0,2021-05-31,30076391,147,Thrive Brokerage House Pvt. Ltd,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.551388,Soaltee Hotel Limited
+468,,2021053105000892,,SHL,4,34,2000,245.0,490000.0,2021-05-31,30076389,147,Opal Securities Investment (PVT) Ltd.,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.550581,Soaltee Hotel Limited
+469,,2021053105000891,,SHL,40,34,1000,245.0,245000.0,2021-05-31,30076386,147,Creative Securities Pvt Ltd,Vision Securities Pvt. Ltd,2021-05-31T13:06:07.549551,Soaltee Hotel Limited
+470,,2021053105000890,,SHL,47,26,150,246.0,36900.0,2021-05-31,30076175,147,Neev Securities Pvt. Ltd.,Asian Securities Private Ltd.,2021-05-31T13:05:57.890627,Soaltee Hotel Limited
+471,,2021053105000889,,SHL,43,46,350,245.0,85750.0,2021-05-31,30076242,147,South Asian Bulls Pvt. Ltd.,Kalika Securities Pvt. Ltd.,2021-05-31T13:05:57.168833,Soaltee Hotel Limited
+472,,2021053105000888,,SHL,54,17,100,246.0,24600.0,2021-05-31,30075121,147,Sewa Securities Pvt. Ltd.,ABC Securities Private Limited,2021-05-31T13:05:04.339279,Soaltee Hotel Limited
+473,,2021053105000887,,SHL,43,57,100,245.0,24500.0,2021-05-31,30074454,147,South Asian Bulls Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T13:04:36.540038,Soaltee Hotel Limited
+474,,2021053105000886,,SHL,14,17,100,246.0,24600.0,2021-05-31,30073552,147,Nepal Stock House (PVT) Ltd.,ABC Securities Private Limited,2021-05-31T13:03:58.476973,Soaltee Hotel Limited
+475,,2021053105000885,,SHL,49,44,100,246.0,24600.0,2021-05-31,30072977,147,Online Securities Pvt. Ltd.,Dynamic Money Managers Securities Pvt. Ltd.,2021-05-31T13:03:34.721329,Soaltee Hotel Limited
+476,,2021053105000884,,SHL,6,6,100,246.0,24600.0,2021-05-31,30072833,147,Agrawal Securities (PVT) Ltd.,Agrawal Securities (PVT) Ltd.,2021-05-31T13:03:27.391094,Soaltee Hotel Limited
+477,,2021053105000883,,SHL,1,6,100,246.0,24600.0,2021-05-31,30072565,147,Kumari Securities Private Limited,Agrawal Securities (PVT) Ltd.,2021-05-31T13:03:14.181112,Soaltee Hotel Limited
+478,,2021053105000882,,SHL,14,29,100,246.0,24600.0,2021-05-31,30071835,147,Nepal Stock House (PVT) Ltd.,Trisul Securities & Invt. Ltd.,2021-05-31T13:02:28.215067,Soaltee Hotel Limited
+479,,2021053105000881,,SHL,34,35,100,245.0,24500.0,2021-05-31,30071412,147,Vision Securities Pvt. Ltd,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:02:17.062091,Soaltee Hotel Limited
+480,,2021053105000880,,SHL,34,35,100,245.0,24500.0,2021-05-31,30071410,147,Vision Securities Pvt. Ltd,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:02:17.06137,Soaltee Hotel Limited
+481,,2021053105000879,,SHL,44,35,100,245.0,24500.0,2021-05-31,30071355,147,Dynamic Money Managers Securities Pvt. Ltd.,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:02:17.060612,Soaltee Hotel Limited
+482,,2021053105000878,,SHL,20,35,100,245.0,24500.0,2021-05-31,30071353,147,Sipla Securities Private Limited,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:02:17.059914,Soaltee Hotel Limited
+483,,2021053105000877,,SHL,45,35,500,245.0,122500.0,2021-05-31,30071351,147,Imperial Securities Company Pvt. Ltd.,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:02:17.059105,Soaltee Hotel Limited
+484,,2021053105000876,,SHL,45,35,100,245.0,24500.0,2021-05-31,30071349,147,Imperial Securities Company Pvt. Ltd.,Kohinoor Investment & Securities Pvt. Ltd.,2021-05-31T13:02:17.057986,Soaltee Hotel Limited
+485,,2021053105000875,,SHL,20,29,100,246.0,24600.0,2021-05-31,30071161,147,Sipla Securities Private Limited,Trisul Securities & Invt. Ltd.,2021-05-31T13:02:12.793206,Soaltee Hotel Limited
+486,,2021053105000874,,SHL,17,29,200,246.0,49200.0,2021-05-31,30070459,147,ABC Securities Private Limited,Trisul Securities & Invt. Ltd.,2021-05-31T13:01:40.438039,Soaltee Hotel Limited
+487,,2021053105000873,,SHL,54,57,500,246.0,123000.0,2021-05-31,30070235,147,Sewa Securities Pvt. Ltd.,Aryatara Investment & Securities,2021-05-31T13:01:29.968726,Soaltee Hotel Limited
+488,,2021053105000872,,SHL,45,29,100,246.0,24600.0,2021-05-31,30069033,147,Imperial Securities Company Pvt. Ltd.,Trisul Securities & Invt. Ltd.,2021-05-31T13:00:34.107927,Soaltee Hotel Limited
+489,,2021053105000871,,SHL,58,21,100,246.0,24600.0,2021-05-31,30073407,147,Naasa Securities Co. Ltd.,Midas Stock Broking Company Private Limited,2021-05-31T12:59:57.899588,Soaltee Hotel Limited
+490,,2021053105000870,,SHL,50,44,100,246.0,24600.0,2021-05-31,30068447,147,Cristal Kanchanjanga Securites Pvt. Ltd.,Dynamic Money Managers Securities Pvt. Ltd.,2021-05-31T12:59:32.920036,Soaltee Hotel Limited
+491,,2021053105000869,,SHL,10,56,100,247.0,24700.0,2021-05-31,30066051,147,Pragyan Securities (PVT) Ltd.,Sri Hari Securities Pvt. Ltd.,2021-05-31T12:57:50.026015,Soaltee Hotel Limited
+492,,2021053105000868,,SHL,10,21,100,246.0,24600.0,2021-05-31,30066024,147,Pragyan Securities (PVT) Ltd.,Midas Stock Broking Company Private Limited,2021-05-31T12:57:50.025076,Soaltee Hotel Limited
+493,,2021053105000867,,SHL,7,54,200,247.0,49400.0,2021-05-31,30067290,147,J.F. Securites (PVT) Ltd.,Sewa Securities Pvt. Ltd.,2021-05-31T12:57:42.381132,Soaltee Hotel Limited
+494,,2021053105000866,,SHL,36,7,100,246.0,24600.0,2021-05-31,30063697,147,Secured Securities Ltd.,J.F. Securites (PVT) Ltd.,2021-05-31T12:56:33.537422,Soaltee Hotel Limited
+495,,2021053105000865,,SHL,35,44,100,247.0,24700.0,2021-05-31,30063144,147,Kohinoor Investment & Securities Pvt. Ltd.,Dynamic Money Managers Securities Pvt. Ltd.,2021-05-31T12:55:51.648111,Soaltee Hotel Limited
+496,,2021053105000864,,SHL,6,21,100,246.0,24600.0,2021-05-31,30062512,147,Agrawal Securities (PVT) Ltd.,Midas Stock Broking Company Private Limited,2021-05-31T12:55:30.46315,Soaltee Hotel Limited
+497,,2021053105000863,,SHL,58,3,100,246.0,24600.0,2021-05-31,30062919,147,Naasa Securities Co. Ltd.,Arun Securities (PVT) Ltd.,2021-05-31T12:55:08.426276,Soaltee Hotel Limited
+498,,2021053105000862,,SHL,21,3,100,246.0,24600.0,2021-05-31,30062854,147,Midas Stock Broking Company Private Limited,Arun Securities (PVT) Ltd.,2021-05-31T12:55:08.425316,Soaltee Hotel Limited
+499,,2021053105000861,,SHL,21,44,100,246.0,24600.0,2021-05-31,30062027,147,Midas Stock Broking Company Private Limited,Dynamic Money Managers Securities Pvt. Ltd.,2021-05-31T12:55:06.626365,Soaltee Hotel Limited
